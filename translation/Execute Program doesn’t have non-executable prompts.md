@@ -13,7 +13,7 @@
 
 但这节课不能同时拥有这种更典型的[间隔重复记忆系统](https://notes.andymatuschak.org/z2D1qPwddPktBjpNuwYFVva)卡片：
 
-> Q. 在许多实现中，`.` *doesn’t* 匹配哪些字符？
+> Q. 在许多实现中，`.` **不** 匹配哪些字符？
 > A. `\n`
 
 主要是概念性的课程（例如 [SQL Constraint Analysis](https://www.executeprogram.com/courses/sql/lessons/constraint-analysis)）不太适合这种模式。
