@@ -16,7 +16,13 @@
 2. 完成一篇翻译时：
    - 将原文本移动到 `done/` 文件夹下；
    - 将译文结果存放在 `translation/` 文件夹下；
+   - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
    - 使用 Git 提交以上文件变更（包含移动与新增的文件）。
+
+## Tooling (uv + ruff)
+
+- 使用 uv 管理脚本运行环境：首次运行前执行 `uv sync --dev`。
+- Python 脚本统一用 ruff 格式化：`uv run ruff format scripts/*.py`。
 
 ## Terminology & Consistency
 

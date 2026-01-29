@@ -4,7 +4,7 @@
 
 [Execute Program](https://notes.andymatuschak.org/zSsjk5UvNPGrYp8B6DEFCMS) 的课程通常只有几分钟。你会读几段关于新概念的文字，立刻上手尝试，然后重复几次，以覆盖该概念的一些核心细节。然后就结束了。
 
-这种简短在一定程度上是因为[Execute Program 的课程假设你对先前材料有扎实的回忆](https://notes.andymatuschak.org/zH26uarYCm9y6tqzuxaGUzt)，但我感觉交互式卡片的存在起了更大的作用。作者不需要花太多时间描述概念，因为读者马上就会亲身体验它。这与我写过的几个现象有关：
+这种简短在一定程度上是因为 [Execute Program 的课程假设你对先前材料有扎实的回忆](https://notes.andymatuschak.org/zH26uarYCm9y6tqzuxaGUzt)，但我感觉交互式卡片的存在起了更大的作用。作者不需要花太多时间描述概念，因为读者马上就会亲身体验它。这与我写过的几个现象有关：
 
 - 它是对一种[演绎式体验](https://notes.andymatuschak.org/z92TGMiBsnraf5KXxSTNkBJ)的非常粗略的近似
   - （尤其是[演绎式体验可以在赋能式环境中引导主动参与](https://notes.andymatuschak.org/zKubRcJXKjiCDPsPgJWckkP)）
