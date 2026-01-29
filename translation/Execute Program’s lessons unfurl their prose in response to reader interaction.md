@@ -10,7 +10,7 @@
 
 同样地，在助记媒介中，你可能会（无论有意还是无意）「跳过」复习区域；这会给读者带来额外的状态需要跟踪。Execute Program 的课程是线性的；读者只需要顺着它走。
 
-[演绎式体验需要阻塞并等待参与者行动](https://notes.andymatuschak.org/z9QaU2pr6kdeXyLqL3F3Eof)，那么 Execute Program 是一种[演绎式体验](https://notes.andymatuschak.org/z92TGMiBsnraf5KXxSTNkBJ)吗？不是：[演绎式体验需要参与者处境中的因果关系](https://notes.andymatuschak.org/zXEtC5KNkZ3kERSyyuJ9sy1)。
+[情景体验需要阻塞并等待参与者行动](https://notes.andymatuschak.org/z9QaU2pr6kdeXyLqL3F3Eof)，那么 Execute Program 是一种[情景体验](https://notes.andymatuschak.org/z92TGMiBsnraf5KXxSTNkBJ)吗？不是：[情景体验需要参与者处境中的因果关系](https://notes.andymatuschak.org/zXEtC5KNkZ3kERSyyuJ9sy1)。
 
 ------
 

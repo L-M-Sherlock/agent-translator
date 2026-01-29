@@ -8,6 +8,7 @@
 | mnemonic essay | 助记文章 | 指助记媒介中的文章形态；按语境可与「助记文本」区分。 |
 | prerequisites | 前置知识 / 前置课程 | 指学习依赖：说「课节/课程依赖关系」时用「前置课程」；说「依赖中包含的内容/材料」时用「前置知识」。 |
 | Enabling environments | 赋能环境 | 固定译法；避免译为「赋能式环境」。 |
+| Enacted experience | 情景体验 | 固定译法。 |
 | prompt (Spaced repetition context) | 卡片 | 指间隔重复系统中的「卡片」（题卡/复习卡），不是「提示」。 |
 | spaced repetition memory system | 间隔重复记忆系统 | 也可简称「间隔重复系统」。 |
 | recall | 回忆 | 作为名词/动词按语境调整；避免译为「召回」。 |
