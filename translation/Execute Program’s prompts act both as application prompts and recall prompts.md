@@ -9,7 +9,7 @@
 > Q. What’s the output of `/a..b/.test(“a\ncb”)`?
 > A. `false`
 
-这之所以像应用卡片，是因为读者被要求应用所学（这张卡片测试了多个概念，其中最主要的是 `.` 不匹配 `\n`）。在课程首次引入该概念的语境里，这确实是一张应用卡片。但它又*不同于*应用卡片，因为它会在第二天、几天后等以完全相同的措辞逐字重现，这与[重复时应用卡片应该变化](https://notes.andymatuschak.org/zSisETSpZBCgZH4rFNHRcnC)相悖。[应用卡片的答案不应从记忆中直接提取](https://notes.andymatuschak.org/zXAYq9zGTGq99CqwBtLwyGq)，所以在第一次或第二次出现之后，这张卡片就*变成*了一张回忆卡片。
+这之所以像应用卡片，是因为读者被要求应用所学（这张卡片测试了多个概念，其中最主要的是 `.` 不匹配 `\n`）。在课程首次引入该概念的语境里，这确实是一张应用卡片。但它又**不同于**应用卡片，因为它会在第二天、几天后等以完全相同的措辞逐字重现，这与[重复时应用卡片应该变化](https://notes.andymatuschak.org/zSisETSpZBCgZH4rFNHRcnC)相悖。[应用卡片的答案不应从记忆中直接提取](https://notes.andymatuschak.org/zXAYq9zGTGq99CqwBtLwyGq)，所以在第一次或第二次出现之后，这张卡片就**变成**了一张回忆卡片。
 
 因此，随着时间推移，Execute Program 的程序性知识卡片会逐渐变成陈述性知识卡片。反过来，因为[Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)，它的陈述性知识卡片也都是用程序性知识卡片的方式来表述。
 

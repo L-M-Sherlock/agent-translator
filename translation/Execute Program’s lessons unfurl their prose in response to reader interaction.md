@@ -4,7 +4,7 @@
 
 在 [Execute Program](https://notes.andymatuschak.org/zSsjk5UvNPGrYp8B6DEFCMS) 中，你无法一次性读完整节课程：你先读一两段，然后按一下「Continue」按钮，接着又出现一两段，然后呈现一张卡片。你回答这张卡片之后，下一段文字才会出现。整个过程是一个节奏稳定、紧凑的输入/输出循环。
 
-这种细粒度的循环与读书完全不同：读书时，读者可以自行控制节奏与深入程度。在传统的在线书籍里，所有文字始终都在；唯一的互动就是滚动。滚动是连续的，而 Execute Program 的步骤是离散的，它会在过程中帮你*自动滚动*。前者确实显得明显更舒适。从这个意义上说，Execute Program 更像是在模拟一段对话，但那是一种你只能点头并照做的对话。见：[Interaction is a cost center in interface design](https://notes.andymatuschak.org/z179DabP631i5Mjf2DBMwoS)。
+这种细粒度的循环与读书完全不同：读书时，读者可以自行控制节奏与深入程度。在传统的在线书籍里，所有文字始终都在；唯一的互动就是滚动。滚动是连续的，而 Execute Program 的步骤是离散的，它会在过程中帮你**自动滚动**。前者确实显得明显更舒适。从这个意义上说，Execute Program 更像是在模拟一段对话，但那是一种你只能点头并照做的对话。见：[Interaction is a cost center in interface design](https://notes.andymatuschak.org/z179DabP631i5Mjf2DBMwoS)。
 
 但这种设计确实创造了高度一致的阅读体验。在 [Mnemonic medium](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS) 中，你可以自由滚动并通读全文；在「阅读模式」与「互动模式」之间切换，需要你停止滚动，并用鼠标点按复习框。从这个意义上说，相比 mnemonic medium，Execute Program 的交互式卡片更「顺理成章」：在 Execute Program 的课程里，每一个「片段」——无论是阅读还是回答卡片——都需要互动，因此它让人感觉比 mnemonic essay 更少「切换」。
 
