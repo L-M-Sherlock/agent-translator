@@ -12,7 +12,7 @@ Expected workflow:
 Alternative workflow (repo-local):
 1) Use a source Markdown file (e.g. done/<name>.md) instead of a source CSV.
 2) Pair each non-empty line in the source Markdown with each non-empty line in the translation file.
-3) Keys will be generated as line_000001, line_000002, ...
+3) Keys will be generated as 0, 1, 2, ...
 
 Run:
   uv run python scripts/export_csv.py --src ./machine_tranz/foo.md.csv --trans ./ai_trans/foo.md
@@ -123,12 +123,9 @@ def main() -> int:
     with out_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["Key", "Source", "Translation"])
         writer.writeheader()
-        for i, ((key, source), translation) in enumerate(
-            zip(src_pairs, trans_lines), start=1
-        ):
-            if not key:
-                key = f"line_{i:06d}"
-            writer.writerow({"Key": key, "Source": source, "Translation": translation})
+        for i, ((_key, source), translation) in enumerate(zip(src_pairs, trans_lines)):
+            # Always use a 0-based integer key for downstream tooling.
+            writer.writerow({"Key": i, "Source": source, "Translation": translation})
 
     print(f"Wrote {len(trans_lines)} rows to {out_path}")
     return 0
