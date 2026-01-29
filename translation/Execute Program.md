@@ -15,7 +15,7 @@ Execute Program 提供由 [Gary Bernhardt](https://notes.andymatuschak.org/Gary_
   - [Execute Program 的课程相当短](https://notes.andymatuschak.org/zLnMMGiCT6xDjMfMurTzKjs)
   - [Execute Program 的 Python 课程有一个动态参考资料](https://notes.andymatuschak.org/z6VuhFzndxKdFM7r4mV81FB)
 - 课程与系统结构：
-  - [在你成功复习其先修内容之前，Execute Program 的课程不会解锁](https://notes.andymatuschak.org/zHLWyC5LVXZLWE9RmoC1gua)
+  - [在你成功复习其前置课程之前，Execute Program 的课程不会解锁](https://notes.andymatuschak.org/zHLWyC5LVXZLWE9RmoC1gua)
   - [Execute Program 的课程假设你对先前材料有扎实的回忆](https://notes.andymatuschak.org/zH26uarYCm9y6tqzuxaGUzt)
   - [在 Execute Program 的复习中，错过的答案不会惩罚学生，除非他们「放弃」](https://notes.andymatuschak.org/zX7RdiHGbHYnkFznUr9VZx7)
   - [Execute Program 的进度机制强调完成新课程，而不是延长回忆时长](https://notes.andymatuschak.org/zHJBriKPXFC2VtF8MVCdj7K)

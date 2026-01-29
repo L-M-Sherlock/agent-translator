@@ -1,4 +1,4 @@
-# 在你成功复习其先修内容之前，Execute Program 的课程不会解锁
+# 在你成功复习其前置课程之前，Execute Program 的课程不会解锁
 
 [Execute Program’s lessons don’t unlock until you’ve successfully reviewed their prerequisites](https://notes.andymatuschak.org/zHLWyC5LVXZLWE9RmoC1gua)
 
@@ -13,5 +13,5 @@
 
 ------
 
-Q. 为什么 Execute Program 的课节会一直锁定，直到学生完成其先修内容？
-A. 为了让课节可以写得高度聚焦，并且不需要对那些先修内容做任何提醒。
+Q. 为什么 Execute Program 的课节会一直锁定，直到学生完成其前置课程？
+A. 为了让课节可以写得高度聚焦，并且不需要对那些前置课程做任何提醒。

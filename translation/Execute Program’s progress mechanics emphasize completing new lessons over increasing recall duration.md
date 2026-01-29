@@ -4,8 +4,8 @@
 
 [Execute Program](https://notes.andymatuschak.org/zSsjk5UvNPGrYp8B6DEFCMS) 上的课节有四种状态：
 
-1. Locked（当一个或多个先修内容未达到 Learned；见[在你成功复习其先修内容之前，Execute Program 的课程不会解锁](https://notes.andymatuschak.org/zHLWyC5LVXZLWE9RmoC1gua)）
-2. Unlocked（当所有先修内容都已达到 Learned，但你尚未学习该课节）
+1. Locked（当一个或多个前置课程未达到 Learned；见[在你成功复习其前置课程之前，Execute Program 的课程不会解锁](https://notes.andymatuschak.org/zHLWyC5LVXZLWE9RmoC1gua)）
+2. Unlocked（当所有前置课程都已达到 Learned，但你尚未学习该课节）
 3. Active（当你已学习该课节，但尚未复习）
 4. Learned（当你至少复习过该课节一次）
 
