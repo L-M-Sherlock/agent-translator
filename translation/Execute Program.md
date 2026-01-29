@@ -4,7 +4,7 @@
 
 [https://www.executeprogram.com](https://www.executeprogram.com/)
 
-Execute Program 提供由 [Gary Bernhardt](https://notes.andymatuschak.org/Gary_Bernhardt) 制作的、关于编程工具的交互式课程。课程将讲解文字与可直接动手的编程题穿插呈现。类似于 [Mnemonic medium](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS)，该网站集成了一个[间隔重复记忆系统](https://notes.andymatuschak.org/z2D1qPwddPktBjpNuwYFVva)，用于随着时间推移重复课程任务。
+Execute Program 提供由 [Gary Bernhardt](https://notes.andymatuschak.org/Gary_Bernhardt) 制作的、关于编程工具的交互式课程。课程将讲解文字与可直接动手的编程题穿插呈现。类似于[助记媒介](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS)，该网站集成了一个[间隔重复记忆系统](https://notes.andymatuschak.org/z2D1qPwddPktBjpNuwYFVva)，用于随着时间推移重复课程任务。
 
 - 课程体验：
   - [Execute Program 的课程会随着读者的互动而展开其文字](https://notes.andymatuschak.org/zWeMGj1huQaESSBTmRWSvD5)

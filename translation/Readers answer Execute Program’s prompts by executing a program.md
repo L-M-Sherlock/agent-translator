@@ -2,7 +2,7 @@
 
 [Readers answer Execute Program’s prompts by executing a program](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL)
 
-类似于 [Mnemonic medium](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS)，Execute Program 的课程将讲解文字与交互式卡片穿插呈现。但让 Execute Program 名副其实的核心构想，是每一次互动都涉及在内嵌解释器中执行一个程序。事实上，[Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)。
+类似于[助记媒介](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS)，Execute Program 的课程将讲解文字与交互式卡片穿插呈现。但让 Execute Program 名副其实的核心构想，是每一次互动都涉及在内嵌解释器中执行一个程序。事实上，[Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)。
 
 例如，一节课可能会用几段文字介绍这样一个概念：在 SQL 中，你可以用 `SELECT column_name` 只选择某一列。然后它可能给出这样一张卡片：
 
