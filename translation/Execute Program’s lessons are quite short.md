@@ -7,7 +7,7 @@
 这种简短在一定程度上是因为 [Execute Program 的课程假设你对先前材料有扎实的回忆](https://notes.andymatuschak.org/zH26uarYCm9y6tqzuxaGUzt)，但我感觉交互式卡片的存在起了更大的作用。作者不需要花太多时间描述概念，因为读者马上就会亲身体验它。这与我写过的几个现象有关：
 
 - 它是对一种[演绎式体验](https://notes.andymatuschak.org/z92TGMiBsnraf5KXxSTNkBJ)的非常粗略的近似
-  - （尤其是[演绎式体验可以在赋能式环境中引导主动参与](https://notes.andymatuschak.org/zKubRcJXKjiCDPsPgJWckkP)）
+  - （尤其是[演绎式体验可以在赋能环境中引导主动参与](https://notes.andymatuschak.org/zKubRcJXKjiCDPsPgJWckkP)）
 - 在[可执行书籍](https://notes.andymatuschak.org/zLNcy2JiH3AGNaZjYkHzK9P)中也有类似效果
 - 在[助记媒介的卡片被穿插进阅读体验之中](https://notes.andymatuschak.org/zTzb8spnoqzxs3mkvPKprmn)所描述的一些影响
 
