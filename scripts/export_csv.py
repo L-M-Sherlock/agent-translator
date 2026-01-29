@@ -9,6 +9,11 @@ Expected workflow:
 2) A translation file exists with one translated segment per non-empty line.
 3) Export a CSV with columns: Key,Source,Translation (no Context column).
 
+Alternative workflow (repo-local):
+1) Use a source Markdown file (e.g. done/<name>.md) instead of a source CSV.
+2) Pair each non-empty line in the source Markdown with each non-empty line in the translation file.
+3) Keys will be generated as line_000001, line_000002, ...
+
 Run:
   uv run python scripts/export_csv.py --src ./machine_tranz/foo.md.csv --trans ./ai_trans/foo.md
 """
@@ -73,7 +78,7 @@ def main() -> int:
         "--src",
         required=True,
         type=Path,
-        help="Source CSV (e.g. ./machine_tranz/foo.md.csv)",
+        help="Source CSV (e.g. ./machine_tranz/foo.md.csv) or source Markdown (e.g. ./done/foo.md)",
     )
     parser.add_argument(
         "--trans",
@@ -100,7 +105,11 @@ def main() -> int:
     out_dir: Path = args.out_dir
     out_path: Path = args.out if args.out else _default_out_path(src_path, out_dir)
 
-    src_pairs = _read_source_csv(src_path)
+    if src_path.suffix.lower() == ".csv":
+        src_pairs = _read_source_csv(src_path)
+    else:
+        # Markdown/plaintext: treat each non-empty line as a source segment.
+        src_pairs = [("", line) for line in _read_nonempty_lines(src_path)]
     trans_lines = _read_nonempty_lines(trans_path)
 
     if len(src_pairs) != len(trans_lines):
