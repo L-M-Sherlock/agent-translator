@@ -8,9 +8,9 @@ Execute Program 提供由 [Gary Bernhardt](https://notes.andymatuschak.org/Gary_
 
 - 课程体验：
   - [Execute Program 的课程会随着读者的互动而展开其文字](https://notes.andymatuschak.org/zWeMGj1huQaESSBTmRWSvD5)
-  - [读者通过执行一个程序来回答 Execute Program 的提示](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL)
-  - [Execute Program 没有不可执行的提示](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)
-  - [Execute Program 的提示既是应用提示，也是回忆提示](https://notes.andymatuschak.org/zUoZHzEPeQFKaUTYctg9fqq)
+  - [读者通过执行一个程序来回答 Execute Program 的卡片](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL)
+  - [Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)
+  - [Execute Program 的卡片既是应用卡片，也是回忆卡片](https://notes.andymatuschak.org/zUoZHzEPeQFKaUTYctg9fqq)
   - 多个例子可以使用同一段代码「preamble」——一种有用的领域特化
   - [Execute Program 的课程相当短](https://notes.andymatuschak.org/zLnMMGiCT6xDjMfMurTzKjs)
   - [Execute Program 的 Python 课程有一个动态参考资料](https://notes.andymatuschak.org/z6VuhFzndxKdFM7r4mV81FB)

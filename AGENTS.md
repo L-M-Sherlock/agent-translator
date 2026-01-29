@@ -18,6 +18,11 @@
    - 将译文结果存放在 `translation/` 文件夹下；
    - 使用 Git 提交以上文件变更（包含移动与新增的文件）。
 
+## Terminology & Consistency
+
+- 统一术语以 `GLOSSARY.md` 为准。
+- 在「间隔重复记忆系统」语境下，`prompt` 指「卡片」，不要译为「提示」（例如：application prompt / recall prompt →「应用卡片」/「回忆卡片」）。
+
 ### Round 1：直译阶段（Literal Translation）
 
 - 目标：忠实原文，逐字逐句译成中文。
