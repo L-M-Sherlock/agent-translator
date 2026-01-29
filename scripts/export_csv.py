@@ -121,11 +121,10 @@ def main() -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     with out_path.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["Key", "Source", "Translation"])
-        writer.writeheader()
+        writer = csv.writer(f)
         for i, ((_key, source), translation) in enumerate(zip(src_pairs, trans_lines)):
             # Always use a 0-based integer key for downstream tooling.
-            writer.writerow({"Key": i, "Source": source, "Translation": translation})
+            writer.writerow([i, source, translation])
 
     print(f"Wrote {len(trans_lines)} rows to {out_path}")
     return 0
