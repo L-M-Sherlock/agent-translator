@@ -13,4 +13,4 @@
 
 因此，这些课程在体验上其实很像复习环节：你可以在一次短暂的坐下来把它完成，并且它不会过度消耗你的注意力。课程与复习环节之间这种相似性，又会被两者交互模型的相似性进一步放大：[Execute Program 的课程会随着读者的互动而展开其文字](https://notes.andymatuschak.org/zWeMGj1huQaESSBTmRWSvD5)。
 
-另见：[渐进式阅读](https://notes.andymatuschak.org/zHwr5v9VJGX3MzHyzz4V8wt)
+另见：[渐进阅读](https://notes.andymatuschak.org/zHwr5v9VJGX3MzHyzz4V8wt)
