@@ -1,6 +1,6 @@
 # 读者通过执行一个程序来回答 Execute Program 的卡片
 
-[读者通过执行一个程序来回答 Execute Program 的卡片](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL)
+[Readers answer Execute Program’s prompts by executing a program](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL)
 
 类似于 [Mnemonic medium](https://notes.andymatuschak.org/zKPv6qkSErdRGqyryvgS2wS)，Execute Program 的课程将讲解文字与交互式卡片穿插呈现。但让 Execute Program 名副其实的核心构想，是每一次互动都涉及在内嵌解释器中执行一个程序。事实上，[Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)。
 

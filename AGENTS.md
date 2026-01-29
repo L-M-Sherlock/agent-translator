@@ -22,6 +22,7 @@
 
 - 统一术语以 `GLOSSARY.md` 为准。
 - 在「间隔重复记忆系统」语境下，`prompt` 指「卡片」，不要译为「提示」（例如：application prompt / recall prompt →「应用卡片」/「回忆卡片」）。
+- 每篇原文中标题下的第一个链接是原文链接：在译文里保留其英文链接文本与 URL，不要翻译该链接文本。
 
 ### Round 1：直译阶段（Literal Translation）
 

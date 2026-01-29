@@ -1,6 +1,6 @@
 # Execute Program 没有不可执行的卡片
 
-[Execute Program 没有不可执行的卡片](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)
+[Execute Program doesn’t have non-executable prompts](https://notes.andymatuschak.org/zYCRKm7HujiD6CNtcC9gnmk)
 
 如 [读者通过执行一个程序来回答 Execute Program 的卡片](https://notes.andymatuschak.org/z9DRugkwcBv7iLRACEnWVDL) 所述，[Execute Program](https://notes.andymatuschak.org/zSsjk5UvNPGrYp8B6DEFCMS) 没有其他类型的卡片。
 
