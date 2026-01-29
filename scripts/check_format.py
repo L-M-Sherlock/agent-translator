@@ -108,6 +108,58 @@ def check_no_chinese_italics(path: Path, raw: str) -> list[Finding]:
     return findings
 
 
+def check_bold_spacing(path: Path, raw: str) -> list[Finding]:
+    """Disallow spaces between Chinese bold spans and adjacent Chinese characters."""
+
+    findings: list[Finding] = []
+    text = strip_code(raw)
+
+    # Match **...** that doesn't span newlines.
+    for m in re.finditer(r"(?<!\*)\*\*([^*\n]*?)\*\*(?!\*)", text):
+        inner = m.group(1) or ""
+        if not inner:
+            continue
+
+        last = inner[-1]
+        first = inner[0]
+
+        # After bold: "**中** 文" should be "**中**文" if the bold text ends with CJK.
+        end = m.end()
+        if (
+            is_cjk(last)
+            and end + 1 < len(text)
+            and text[end] == " "
+            and is_cjk(text[end + 1])
+        ):
+            findings.append(
+                Finding(
+                    path=path,
+                    line=find_line_number(text, end),
+                    kind="bold-spacing",
+                    message="Remove the space after a Chinese bold span when the next character is Chinese.",
+                )
+            )
+
+        # Before bold: "中 **文**" should be "中**文**" if the bold text begins with CJK.
+        start = m.start()
+        if (
+            is_cjk(first)
+            and start - 2 >= 0
+            and text[start - 1] == " "
+            and is_cjk(text[start - 2])
+        ):
+            findings.append(
+                Finding(
+                    path=path,
+                    line=find_line_number(text, start),
+                    kind="bold-spacing",
+                    message="Remove the space before a Chinese bold span when the previous character is Chinese.",
+                )
+            )
+
+    return findings
+
+
 def check_link_spacing(path: Path, raw: str) -> list[Finding]:
     findings: list[Finding] = []
     text = strip_code(raw)
@@ -242,6 +294,7 @@ def main() -> int:
     for path in sorted(translation_dir.glob("*.md")):
         raw = path.read_text(encoding="utf-8")
         findings.extend(check_no_chinese_italics(path, raw))
+        findings.extend(check_bold_spacing(path, raw))
         findings.extend(check_link_spacing(path, raw))
 
         done_path = done_dir / path.name
