@@ -94,8 +94,24 @@ def check_no_chinese_italics(path: Path, raw: str) -> list[Finding]:
             )
 
     # Single-underscore italics containing CJK.
-    for m in re.finditer(r"(?<!_)_([^_\n]*?)_(?!_)", text):
-        if RE_CJK.search(m.group(1) or ""):
+    #
+    # Note: underscores are extremely common inside URLs and identifiers (e.g. `Piotr_Wozniak`).
+    # To avoid false positives, only treat `_..._` as emphasis when it's surrounded by
+    # whitespace or punctuation (i.e. not in the middle of a word/URL).
+    for m in re.finditer(r"(?<!_)_([^_\n]+?)_(?!_)", text):
+        inner = m.group(1) or ""
+        if not RE_CJK.search(inner):
+            continue
+
+        before = text[m.start() - 1] if m.start() - 1 >= 0 else ""
+        after = text[m.end()] if m.end() < len(text) else ""
+
+        before_ok = before == "" or before.isspace() or before in "([{\"'“「『"
+        after_ok = (
+            after == "" or after.isspace() or after in ")]}\"'”」』，。！？；：、.!?;:"
+        )
+
+        if before_ok and after_ok:
             findings.append(
                 Finding(
                     path=path,
