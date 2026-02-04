@@ -19,6 +19,11 @@
    - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
    - 使用 Git 提交以上文件变更（包含移动与新增的文件）。
 
+### Long Articles
+
+- 对于篇幅过长的文章，可使用 `tmp/` 文件夹暂存分段翻译过程中的中间稿（例如：`tmp/28. Sleep and learning.part01.md`）。
+- `tmp/` 中的内容不作为最终交付物；完成终稿后以 `translation/` 中的文件为准。
+
 ## Tooling (uv + ruff)
 
 - 使用 uv 管理脚本运行环境：首次运行前执行 `uv sync --dev`。
