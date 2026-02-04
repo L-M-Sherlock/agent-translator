@@ -17,6 +17,7 @@
    - 将原文本移动到 `done/` 文件夹下；
    - 将译文结果存放在 `translation/` 文件夹下；
    - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
+   - 运行导出脚本 `uv run python scripts/export_csv.py ...`，确保译文和原文段落一一对应（输出到 `csv/`，无需提交）；
    - 使用 Git 提交以上文件变更（包含移动与新增的文件）。
 
 ### Long Articles
