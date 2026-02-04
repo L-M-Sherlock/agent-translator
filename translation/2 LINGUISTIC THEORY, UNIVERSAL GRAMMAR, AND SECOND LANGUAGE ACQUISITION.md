@@ -1,0 +1,264 @@
+# 2 语言学理论、普遍语法与第二语言习得
+
+*Lydia White*
+
+### 理论及其构念
+
+#### 母语者与 L1 习得者的语言能力
+
+生成语言学理论旨在刻画某种语言母语者的**语言能力**，并解释儿童第一语言（L1）习得者何以能够获得这种能力。从生成语言学视角研究第二语言（L2）习得也有相应目标，具体而言，是解释中介语能力的性质与习得过程（见 Gregg，1996；White，1989，2003）。
+
+在这一框架下，语言使用（理解与产出）被认为以一种抽象的语言系统为基础，即对语法的心理表征（句法、音系、形态、语义）。以这种方式表征的语言知识是无意识的。此外，这些无意识知识中的很大一部分并不需要在 L1 习得过程中学习；相反，它源自**普遍语法**（UG）。这一主张的动机来自所谓的**语言习得的逻辑问题**，或「刺激贫乏」问题，即儿童所接触到的输入与其最终达到的水平之间的不匹配（例如 Chomsky，1986b）。我们的语言知识在许多方面都超越输入。例如，儿童和成人能够理解并产出他们从未听过的句子；他们在没有被教过的情况下就知道某些结构是不合语法的；他们还知道在某些语境中，句子不可能有某些解读。
+
+请看下面的例子，来自 de Villiers、Roeper 与 Vainikka（1990）以及 Roeper 与 de Villiers（1992）。想象这样一个情境：一个男孩下午爬树，不小心从树上掉下来弄伤了自己。晚上，他把发生的事情告诉了父亲。现在请看在这一语境下说出的（1）中的问题。
+
+- (1)
+  1. When did the boy say (that) he got a bruise?
+  2. When did the boy say how he got a bruise?
+
+在该语境中，像（1a）这样的问题有歧义：它既可以问他受伤的时间（下午），也可以问他把这件事告诉父亲的时间（晚上）。相反，（1b）没有歧义。尽管它只差一个词（嵌入从句由 *how* 引入），这个问题只能得到与「讲述的时间」相关的回答，例如 *in the evening* 或 *when he was in the bath.* 换言之，它必须被理解为针对主句的提问；嵌入从句的解读是不可能的，尽管在（1a）的情况下那种解读完全可接受且可获得。De Villiers 及其同事用类似情境做了一系列实验，发现以英语为母语的幼儿对这两类句型的差异极其敏感：在（1a）上允许两种解读，而在（1b）上只允许一种解读（主句解读）。
+
+儿童如何知道这一点？几乎不可能是因为有人明确告诉他们：某些句子有歧义，而另一些（表面非常相似的）句子没有歧义。考虑到儿童会接触到各种合语法的 *wh-*questions（简单从句和嵌入从句都包括），这种信息似乎也不太可能从他们听到的语言中归纳出来。因此，我们的观察是：输入不足以决定儿童的语言能力。于是有人主张，儿童必须把先天的、内置的知识用于第一语言习得任务。在这个例子中，UG 的一个原则——所谓的**岛屿约束**之一（Ross，1967）（也称 Subjacency Principle）——以特定方式限制 ***wh-\*movement**。这些约束实际上表明：某些成分构成岛屿，短语无法从中逃逸。[1](javascript:void(0))（1b）中的嵌入从句是一个 *wh-*island，其中心是一个疑问短语（*how*），而（1a）中的嵌入从句则不是。*wh-*phrase *when* 只有在（1a）的情况下才能「逃逸」，它会经过一个在（1b）中不可用的位置，因为该位置已被 *how* 占据。两种句子都可能有另一种解读，是因为 *when* 与主句相联系；因此，并不存在从嵌入从句（无论是否是岛屿）中抽取成分的情况。
+
+岛屿约束的另一个相关效应是：当 *wh-*movement 从岛屿中发生时，这类句子在英语中是不合语法的，如（2a）所示。这里，*what* 从一个嵌入的 *wh-*clause 中被抽取出来；由于与（1b）不能有嵌入从句解读同样的原因，这种抽取是不可能的。相反，（2b）是可接受的，因为该嵌入从句不是岛屿；存在一个 *wh*-phrase 可以「逃逸」经过的位置，在（2b）中由中间的 *t* 标示。
+
+- (2)
+  1. *Whati does John wonder [who bought ti]?
+  2. Whati does John think [ti that Mary bought ti]?
+
+同样地，从可习得性角度来看，我们不太可能假设：英语的 L1 习得者仅凭英语输入就能获得对（2a）这类句子不合语法性的知识。相反，这类约束必须源自 UG；*wh-*movement（以及语言的许多其他性质）的习得受到先天原则的约束。语言是在预设此类知识的前提下被习得的，因此 L1 习得者不必学习何时某些句型是不合语法的，也不必学习何时会/不会存在某些结构性歧义。
+
+#### 中介语能力
+
+既然语言学理论提供了母语者语言能力的模型，它也可能同样能够刻画非母语者的能力。这正是从生成语言学视角研究 L2 习得的研究者所持的假设。长期以来，人们观察到 L2 学习者的语言具有系统性并受规则支配（例如 Corder，1967）。Selinker（1972）创造的术语 *interlanguage* 已被广泛采用，用来指称 L2 学习者与 L2 使用者的语言能力（下文简称 L2ers）。在生成范式下工作的 L2 研究者认为，中介语语法与母语者语法一样，涉及无意识的心理表征，尽管他们未必在这些表征的精确性质上达成一致，例如 L1 影响的性质与程度，以及 UG 约束的地位。
+
+尽管不能想当然地认为 UG 必然在 L2 习得中运作，但可习得性方面的考虑（L2 习得的逻辑问题）在 L2 习得中与在 L1 中一样适用（例如 White，1989）。也就是说，如果能够表明 L2ers 获得了由 L2 输入不足以决定的抽象而细微的性质，这就提示中介语能力也必须受到与母语能力相同的约束。
+
+再以 *wh-*movement 为例。（1a）相对于（1b）的歧义差异，以及（2a）相对于（2b）的不合语法性差异，构成一个 L2 可习得性问题，与 L1 习得者面临的问题平行。没有理由认为，除非 L2ers 在这些 *wh*-movement 方面接受了专门教学——这似乎极不可能——否则 L2 英语输入会比 L1 英语输入对 *wh-*questions 提供更多信息。换言之，如果这类抽象知识被成功习得，那么岛屿约束必然同样涉及 L2 与 L1。
+
+然而，如果事实证明 L2ers 确实表现出与母语者同样细微的知识，一个合理的反驳是：这种知识的来源并非直接来自 UG，而是来自母语语法（例如见 Bley-Vroman，1989；Schachter，1990）。也就是说，L2 学习者之所以显示出对岛屿约束的知识，可能是因为这些约束在 L1 语法中已被激活，而不是因为中介语语法本身受到 UG 约束。因此，为排除这一可能性，有必要考察这样的情形：L1 与 L2 的差异使得母语语法无法为学习者提供所需知识。就 *wh-*questions 而言，如果 L1 是所谓 *wh-in-situ* 而不是 *wh-*movement 的语言（如 Chinese、Japanese 或 Korean），就能达到这一目的。在这些语言中，与 English 不同，*wh-*phrases 不会移动，而是停留在其底层位置。这既适用于像（3a）所示的简单 *wh-*questions，也适用于像（3b）所示的来自嵌入从句的 *wh-*questions。[2](javascript:void(0))
+
+- (3)
+
+  1. ni xihuan shei?
+
+     like who
+
+     “Who do you like?”
+
+  2. Zhangsan xiangxin shei mai-le shu?
+
+     Zhangsan believe who buy-ASP books
+
+     “Who does Zhangsan believe bought books?”
+
+在（3a）中不存在 *wh-*fronting；相反，*wh-*phrase（*shei* “who”）仍然位于从句内部的宾语位置。（3b）同样如此：*shei* 仍停留在嵌入从句的主语位置。
+
+现在来看（1）的 Chinese 对应句。在（4a）中，*wh-*phrase（*shenmoshihou* “when”）不会从嵌入从句中移出。因此，与其 English 对应句不同，这个问题没有歧义：它只能询问男孩受伤的时间（嵌入从句解读），而不能询问讲述的时间（主句解读）。若要询问讲述的时间，*when* 必须出现在主句中，如（4b）所示。同样，这个问题也没有歧义。因此，在 Chinese 中，每一种解读都对应不同的语序（比较（4a）与（4b））；而在 English 中，同一种语序可以有两种含义（如（1a））。
+
+- (4)
+
+  1. nanhai shuo ta shenmoshihou nong qing
+
+     boy say he when got bruise
+
+     “When did the boy say that he got a bruise?”
+
+  2. nanhai shenmoshihou shuo ta nong qing
+
+     boy when say he got bruise
+
+     “When did the boy say that he got a bruise?”
+
+  3. nanhai shenmoshihou shuo ta zenyang nong qing
+
+     boy when say he how got bruise
+
+     “When did the boy say how he got a bruise?”
+
+在（4c）的情况下，*when* 再次明确要求主句解读。因此，Chinese 中不存在与 English（1a）和（1b）之间的歧义对立相对应的歧义差异。于是，如果 L2 学习者了解到像（1a）这样的 English 句子有歧义，而像（1b）这样的句子没有歧义，这不仅表明他们习得了 *wh-*movement，还表明他们知道对 *wh-*movement 的约束，而这些知识不可能来自 L1。
+
+我们也已经看到，像（2a）那样从岛屿中发生 *wh-*movement 的句子在 English 中是不合语法的。相反，（5）中的 Chinese 句子是合语法的，因为并没有发生从岛屿中移出的 *wh-*movement；相反，*wh-*phrase 原位保留。
+
+- (5) ni xiang-zhidao shei mai-le shenme?
+
+  you wonder who buy-ASP what
+
+  “What is the thing such that you wonder who bought it?”
+
+  (cf. “*What do you wonder who bought?”)
+
+到目前为止可以总结为：某种语言母语者的语言能力包含对歧义与不合语法性的知识，前述对 *wh-*movement 的限制就是例证。鉴于仅凭输入不足以解释这种知识如何获得，儿童在习得母语时必定具有语言的先天规定——UG——它引导并限制他们对所习得语法形式的假设。如果 English 的 L2 学习者也了解到对 *wh-*movement 的类似限制，尤其当这些限制无法从 L1 语法推导出来时，这就为 UG 约束在中介语语法中仍然发挥作用提供了证据。
+
+#### 普遍语法：原则与参数
+
+UG 的精确性质与内容属于语言学理论的研究范围；随着理论发展，各种主张会不断变化并被精炼。不过，粗略而言，在生成语法的不同版本之间（例如管约理论 Government and Binding（GB）理论，Chomsky，1981；或最简方案 Minimalism，Chomsky，1995），以下一些假设是共通的。UG 的「原则」（*principles*）约束语法的形式，也约束语言规则的运作。前面讨论的岛屿约束就是此类原则的例子，它们规定了对 *wh-*movement 的普遍限制；其核心想法是：所有 *wh-*movement 的情形都将受到这类约束。正如我们所见，该观点认为语言习得者不必学习这些原则——它们内置于 UG。相反，「参数」（*parameters*）解释语言之间某些受限的差异；其想法是：这些差异同样编码于 UG 中，使得语言习得者能够容易地确定自己正在习得何种语言。据称，输入数据会「触发」（*trigger*）对所习得语言而言合适的参数选择（Lightfoot，1989）。是输入决定了在 UG 所提供的参数取值之间做出何种选择。
+
+作为参数的一个例子，再看 *wh-*movement。正如我们所见，*wh-* 短语的位置在不同语言中不同。这一差异被归因于一个参数，即 ± *wh-*movement。语言大致可分为两类：具有 *wh-in-situ* 的语言（如东亚语言），以及具有 *wh-*movement 的语言（如日耳曼语族、罗曼语族和斯拉夫语族语言）。在这种情况下，形式为简单 *wh-*questions 的输入就足以触发相应的参数取值（见 Crain & Lillo-Martin，1999）。习得英语的儿童会接触到像（6a）那样带有前置 *wh-* 短语的问题，显示 *wh-*movement；而习得汉语的儿童会接触到像（6b）那样的句子，显示缺乏移动。
+
+- (6)
+
+  1. What do you want?
+
+  2. ni xihuan shei?
+
+     you like who
+
+普遍原则并不一定在所有语言中运作，而只在具有相关性质的那部分语言中运作。在具有显性 *wh-*movement 的语言中，移动受到以岛屿约束形式体现的 UG 原则制约。换言之，移动并非完全自由；正如我们所见，存在某些成分类型，*wh-* 短语无法从中逃逸。正是 UG 指定哪些领域构成岛屿。[3](javascript:void(0)) 相反，在 *wh-in-situ* 语言中，由于不存在移动，岛屿约束并不相关。[4](javascript:void(0))
+
+[表 2.1](javascript:void(0)) 总结了汉语与英语之间的相关差异。因此，如果中介语能力受到 UG 约束，那么一旦 L2ers 重新设定 ± *wh-*movement 参数，中介语语法中的 *wh-*movement 就应当受到岛屿约束的制约。
+
+**表 2.1** 与 *wh*- 表达相关的参数与约束
+
+|         | 参数             | 约束             |
+| ------- | ---------------- | ---------------- |
+| 英语    | +*wh-*movement   | 岛屿约束启用     |
+| 汉语    | −*wh-*movement   | 岛屿约束不启用   |
+
+### 什么算作证据？
+
+必须理解，语言能力是一种抽象概念；我们不可能直接「触及」语言能力本身。生成语言学视角下的 L2 研究通过采用多种表现测量手段来探究中介语能力的性质，试图据此发现底层心理表征的关键特征。一个常见问题是：很难构造与无意识知识相关的任务，而不是与在课堂中被显性学习的有意识知识相关的任务。理想情况下，应当综合来自多种来源的表现数据来考察中介语能力问题。相关数据大致可分为三类： *production data*、*intuitional data* 和与解读（或理解）相关的数据。某一种诱发任务是否合适，取决于研究者试图发现什么。
+
+自发产出数据似乎为中介语能力的性质提供了一个显而易见的信息来源。然而，使用情况并不一定准确反映知识或习得；产出数据可能导致我们低估某位 L2er 的整体语言能力。Lardiere（1998）考察了这样一个案例：某位 L2er 在口语 English 中恰当使用时态与一致形态标记的频率非常低，但与此同时却掌握了复杂句法。也可能出现相反情况：产出数据可能使我们高估学习者的能力。也就是说，L2ers 可能看起来非常熟练，甚至接近母语者，但其语法仍是非母语的；那些表面上看与母语者产出完全相同的句子，底层表征实际上可能不同（例如 Hawkins & Chan，1997）。
+
+此外，当研究者关注的现象不太可能在产出中轻易出现时，就需要替代方法。就前述岛屿约束而言，像（1a）这样的句子之歧义与像（1b）这样的句子缺乏歧义，几乎不可能在产出中被观察到。同样，也不太可能期待 L2ers 产出像（2a）这样的句子。然而，在产出中找不到岛屿约束违例，并不能作为不合语法性知识的证据，因为这种缺失可能只是抽样的偶然结果。由于该框架下一个重要研究问题是中介语语法是否受到 UG 约束，因此必须弄清：被 UG 原则排除的形式，在中介语语法中是否确实是不合语法的。建立这一点的一种潜在方式是诱发产出（Crain & Thornton，1998）。如果设置一个任务，使某种结构按理应当出现，而 L2ers 却回避该结构，这就间接提示该结构对学习者而言是不合语法的。White 与 Juffs（1998）用这种技术研究了 L2 中的岛屿约束。
+
+用于判定 L2（不）合语法性知识最常用的任务是**合语法性判断**任务，它试图触及语言直觉。这类任务使研究者能够检验：由于 UG 原则而被母语者排除的句子，是否也在中介语语法中被禁止。再以岛屿约束为例，另一种岛屿可以由复杂 NP 构成（包含关系从句或补语从句的 NP）。从复杂 NP 中抽取 *wh-* 短语在英语中是不合语法的，如（7a）所示。相反，像（7b）这样的句子是合语法的，因为并未发生此类抽取。
+
+- (7)
+
+  1. *Whose life did you read a biography that described?
+
+     (cf. I read a biography that described someone’s life.)
+
+  2. Whose life did you read about?
+
+假设你想确定某位 English 的 L2 学习者是否知道像（7a）这样的句子是不合语法的，换言之，他的语法是否受到岛屿约束。为了确立 L2 学习者是否「知道」这一约束，合语法性判断任务是合适的：向学习者呈现一组与目标结构相关的合语法与不合语法句子，并让他们指出这些句子是否合语法。若中介语语法受到 UG 约束，并且 *wh-*movement 已经习得，那么 L2ers 预计会拒绝像（7a）这样的句子，同时接受其合语法对应句。因此，通过合语法性判断，实验者可以（间接地）考察中介语能力的某些方面，而这些方面可能并不容易通过其他方式检视。许多研究都使用这类任务来探索岛屿效应在中介语语法中的表现（例如 Hawkins & Chan，1997；Schachter，1990；White & Juffs，1998）。
+
+没有任何单一方法适合研究语言能力的所有方面。如果研究的是解读问题，合语法性判断可能完全没有信息量。再考虑（1a）相对于（1b）的歧义对比。如果让 L2ers 对这类句子做判断，并且他们指出两句都是合语法的，这并不能帮助我们确定他们是如何理解这些句子的（即 *when* 被理解为询问嵌入从句还是主句）。因此，在检验 English 的 L1 习得者是否知道相关性质时，de Villiers 及其同事采用了一个理解任务：向儿童展示图片并提出测试问题；儿童的回答表明他们是如何解读该问题的。
+
+另一种考察 L2ers 对句子解读的方法是**真值判断**。在这种方法中，研究者向参与者提供一个语境（以短故事或图片形式），并要求他们判断某个句子在该语境中是真还是假。Dekydtspotter 及其同事（例如 Dekydtspotter、Sprouse 与 Swanson，2001）用这种方法表明，L2ers 对 French 中与语序相关的细微解读性质很敏感，并提出这种敏感性必须来自 UG 而非 L1。之所以说该方法特别适合用来为无意识语言能力的性质提供证据，是因为这些判断并非基于元语言层面的推理；而在合语法性判断中，我们无法排除参与者动用有意识知识来进行判断的可能性。
+
+除了产出数据、直觉数据和句子解读数据之外，近年来人们越来越关注使用在线方法来提供证据，以揭示 L2ers 如何在真实时间中增量地处理或计算输入。就 L2 对 *wh*-movement 与岛屿约束的知识与使用而言，这类方法包括但不限于眼动追踪（例如 Cunnings、Batterham、Felser 与 Clahsen，2010）以及自定步速阅读（例如 Aldwayan、Fiorentino 与 Gabriele，2010；Omaki 与 Schultz，2011；概述见 Clahsen 与 Felser，2006）。在讨论本章的代表性研究时，我们会回到自定步速阅读这一方法。
+
+### 常见误解
+
+这里我们讨论关于生成 SLA 研究的四个常见误解：这些误解涉及（a）理论的范围，（b）L2 中缺乏母语者式的「成功」，（c）迁移，以及（d）方法论。
+
+为了回应第一个误解，本章所描述的理论并不试图解释 L2 习得的所有方面。恰恰相反，这一理论有意限定范围，专注于对中介语能力的描述与解释（按技术性定义）。其关注点是学习者如何以心理语法的形式表征 L2。该理论不旨在解释第二语言使用，也不旨在解释所有可观察现象（见下文）。
+
+需要理解的是，UG 是一套关于表征约束的理论，前面讨论的例子已经说明了这一点；这既适用于 L1 习得（例如 Borer，1996），也适用于 L2（White，2003）。UG 决定语言能力的性质；UG 的原则（约束）保证某些潜在分析事实上永远不会被采纳。这并没有说明习得的时间进程（L1 或 L2），也没有说明在语言发展过程中是什么驱动语法发生变化。同样，参数设定理论事实上并不提供一套语言发展理论，尽管它常被这样看待。L2 中参数重设的概念预设：中介语语法会发生某种变化，从 L1 的参数取值变为另一种取值（例如从 − *wh-*movement 变为 +*wh-*movement）。因此，不同时间点的中介语语法可能对应不同的参数设定。然而，导致这种语法变化的具体机制并不属于 UG 理论本身；相反，该理论需要在多方面得到补充（Carroll，2001；Gregg，1996）。
+
+第二个误解是：如果 UG 约束中介语语法，这就必然预测 L2 习得会得到「成功」的结果，即 L2ers 的**终态**语法在重要方面不应与母语者语法显著不同。然而，「中介语语法受到 UG 约束」这一主张指的是：L2ers 的语言表征像其他自然语言一样受到 UG 原则的制约；它并不主张 L2ers 必然会获得与母语者相同的语法。就 *wh-*questions 而言，UG 并不规定必须习得 *wh-*movement（因为 *wh-in-situ* 语言的 L1 习得者并不会习得它），它只规定：如果习得了，它就必须受到相关原则（包括岛屿约束）的制约。在 L2 中，还会有许多在 L1 习得中不会出现的因素介入——包括先前对另一种语言的知识以及输入可能存在的缺陷——这些因素可能阻碍学习者达到母语者水平。
+
+第三个误解是：L1 在 L2 习得中应该只扮演相对微不足道的角色，仿佛强烈的 L1 影响与「UG 参与 L2 习得」这一主张不相容。然而事实上，许多生成 SLA 的支持者把 L1 语法纳入理论的核心部分。具体而言，Full Transfer Full Access Hypothesis（FTFA）及其前身主张：L2 习得的初始状态由 L1 习得的稳态语法构成（Schwartz & Sprouse，1996；White，1989）。L2ers 最初用 L1 语法来刻画 L2 数据；这就是「完全迁移」（*full transfer*）。随后，在 L2 输入的作用下，语法可能被修订。这些修订被认为受到 UG 约束，因此称为「完全可及」（*full access*）。迁移是否持续，取决于具体的语言性质以及具体的语言组合（见下文的可观察现象）。即便 L2ers 未能获得 L2 的某些性质，中介语语法仍预计会落在 UG 所允许的范围内；也就是说，它们会像任何自然语言一样受到约束。也有可能，L2ers 得到了适用于其他语言、但既不适用于 L1 也不适用于 L2 的分析（例如 Finer，1991）。
+
+继续我们的 *wh-*movement 例子，这意味着：在习得 *wh-*movement 之前，L1 是 *wh-in-situ* 语言的学习者，预计也会把 L2 当作 *wh-in-situ* 语言来处理。支持这一点的证据是：Bhatt 与 Hancin-Bhatt（2002）报告了以 Hindi（*wh-in situ* 语言）为母语者的 L2 English 中出现 *wh-in-situ* 的证据。此外，即便 L2ers 在表面上似乎已经放弃了对 L2 的 *wh-in-situ* 分析，他们也未必习得了 *wh-*movement；相反，他们可能把 *wh-*phrases 生成在从句起始位置作为话题，类似于 L1 中的其他话题（Hawkins & Chan，1997；Martohardjono & Gair，1993；White，1992）。[5](javascript:void(0)) 因此，岛屿约束在这种情况下将不会起作用，理由与它们对 *wh-in-situ* 不适用相同：因为并没有发生移动。
+
+最后，还有关于方法论的误解。有人声称（Carroll & Meisel，1990；Ellis，1991），在 UG 范式下工作的研究者赋予合语法性判断任务某种特权地位，仿佛它能够直接反映语言能力。事实上，判断数据被认为同样属于表现数据，与其他数据并列（White，1989，2003）。合语法性判断任务唯一的「优势」是：它提供了一种相对直接的方式来评估不合语法性知识。正如证据一节所述，不同类型的数据提供不同类型的证据，而任何特定任务（以及通过它收集到的表现数据）是否合适，取决于研究者试图探究的具体问题。
+
+### 一个代表性研究：Aldwayan、Fiorentino 与 Gabriele（2010）
+
+近年来，研究者不仅关注 L2 语法是否受到 UG 原则约束，也关注当 L2ers 在真实时间中理解语言输入时，他们是否会受此类知识制约。问题在于：L2ers 在在线加工中能否充分利用结构信息（包括普遍约束）；在技术上，这被称为 *parsing*。
+
+这一问题通过考察长距离依存关系的加工来研究，其中包括与 *wh*-movement 相关的依存。当人们听（或读）一个句子时，被前置的 *wh-* 短语（常被称为填充项，*filler*）必须在记忆中保持，直到它能够与其移动来源的结构位置（空位，*gap*）建立联系。在像（8a）这样的简单 *wh-*question 中，*what* 是填充项，空位出现在动词 *see* 之后，即 *what* 被解读的宾语位置。在更复杂的 *wh-*question（8b）中，*what* 仍是填充项，而且实际上存在两个潜在空位位置：一个在动词 *say* 之后，一个在动词 *found* 之后；第一个并非真实空位，但在听到 *say* 这个词时——因为此刻还没听到句子后续——这一点尚不明显。
+
+- (8)
+  1. What did the girl see _?
+  2. What did the boy say _ that he found _?
+
+Clahsen 与 Felser（2006，2018）提出「浅层结构假说」（*Shallow Structure Hypothesis*，SSH），认为与母语者相比，L2ers 在解析时主要依赖词汇与语义线索，而不是句法。因此，他们在解析 L2 句子时的行为会不同于母语者，尤其是在复杂结构方面。相反，Aldwayan、Fiorentino 与 Gabriele（2010）提出的假设是：L2 解析是以句法为基础的；中介语语法不仅受到 UG 原则约束，而且这些原则在 L2ers 解析 L2 输入时也是可及的。他们的研究考察 Nadji Arabic 的母语者：该语言没有 *wh-*movement，而他们的 L2 是英语——一种 *wh-*movement 语言。
+
+在 Nadji Arabic 中，*wh* 短语位于句首位置，但这并非移动的结果；相反，它在该位置以基底生成出现，而一个替代代词（resumptive pronoun）（在（9）的例子里为 *ih* “him”，来自 Aldwayan et al.，2010）填充 *wh* 短语被解读的位置。因此，如（9a）所示并不存在空位；而且，与前文讨论的汉语类似，在像英语这样的 *wh-*movement 语言中会不合语法的句子，在 Arabic 中是可接受的；见（9b）与其英语翻译之间的对比。
+
+- (9)
+
+  1. min alli arsal ar-rasalah li-ih
+
+     who C send the-letter to-him
+
+     “Who did you send the letter to?”
+
+  2. hatha ar-rjal alli Mary 9alima-t-ni mita ib-til zor-ih
+
+     this the-man c Mary tell when will-she visit-him
+
+     “*This is the man who Mary told me when she will visit”
+
+如果 L2 习得受到 UG 约束，并且这些 Nadji Arabic 说话者已经习得英语的 *wh-*movement（即重新设定 *wh*-movement 参数），那么他们预计会遵守并应用对 *wh-*movement 的约束，尽管这些约束在 L1 中并未被激活。该假设通过一个基于 Stowe（1986）的自定步速阅读任务来检验。在自定步速阅读中，参与者在电脑屏幕上逐词（或逐短语）阅读呈现的句子。读完一个词后，他们按键表示准备阅读下一个词；按键时会记录阅读时间。Stowe 发现：当英语母语者预期出现一个空位却发现该位置被填充时，他们的阅读时间会变慢（所谓 *filled-gap effect*）。请看（10）中的句子。
+
+- (10) My cousin wondered who David will put _ me near _ at the wedding.
+
+该句包含一个嵌入的 *wh* 从句，以 *who* 为填充项；其中有两个潜在空位，一个在动词 *put* 之后，一个在介词 *near* 之后。正确解读涉及第二个空位。然而，在遇到动词 *put* 时（尚未看到句子其余部分），母语者的第一个假设是 *who* 是该动词的宾语，因此当他们读到 *me* 时会出现更慢的阅读时间，表明他们对被填充空位的出现感到意外。
+
+现在看像（11）这样的句子。在这里，介词 *about* 之后似乎也有一个潜在空位，可能会使读者放慢速度；但事实上，这个位置被 *Sam’s sick mother* 填充。然而，Stowe 发现母语者在这种情况下并不会放慢。这是因为潜在空位位于一个复杂 NP 主语之内，而这构成一个句法岛屿。由于在这种情况下移动被禁止，*wh* 短语与岛屿内部的位置不可能建立关系，正如我们前面所见。
+
+- (11) The girl questioned who [the sad findings about _ Sam’s sick mother] were announced to upset _.
+
+总之，母语者会表现出填充空位效应，但只在「误导性」空位处于语法上可能的位置时才会如此。
+
+Aldwayan 等（2010）检验 Nadji Arabic 说话者在其 L2 中是否会呈现类似母语者的行为模式。他们假设 L2ers 会对以下两点敏感：（a）合法空位——体现在像（10）那样的句子中，遇到被填充空位时阅读时间变慢；（b）空位不能出现在句法岛屿内部——体现在像（11）那样的句子中，不会出现阅读时间变慢。这样的结果将表明，L2ers 在解析输入时会参照句法结构，包括岛屿约束。
+
+参与者包括 40 名成年 Nadji Arabic 母语者（高级英语 L2ers）以及 40 名英语母语者。他们参加了一个自定步速（逐词）阅读任务，其中包含两组句子（以及填充项）。第一组与（10）类似（也包括结构相似但没有移动、因此没有空位的句子），用于确定参与者是否表现出填充空位效应。第二组旨在考察他们如何处理非法空位（即违反岛屿约束的空位），如（11）所示。如果 L2ers 对岛屿敏感，他们在这类句子中不应表现出填充空位效应。
+
+结果显示：对于像（10）这样的句子，与对应的无空位句子相比，两组参与者（母语者与 L2ers）都出现了显著的填充空位效应（阅读时间变慢）。相反，在像（11）这样的句子中并不存在填充空位效应，表明两组都没有在句法岛屿内部假设一个空位。综合来看，这些结果表明：当 L2ers 的 L1 不具有 *wh-*movement 时，他们仍然知道何时允许移动、因而可以设定空位，也知道何时不允许移动、因而空位不可用。回忆一下，在 L1 的 *wh*-constructions 中不存在空位，因为 Nadji Arabic 需要替代代词（resumptive pronouns），而这种代词可以出现在句法岛屿内部。L2ers 能呈现这种对比，提示他们能够接触抽象结构，包括对 *wh*-movement 的约束；这既体现在他们的底层知识中，也体现在他们在在线加工中对该知识的调用中。
+
+总之，这些结果与如下主张一致：UG 的参数可以被重设（在此例中，从 − *wh-*movement 变为 + *wh-*movement），并且中介语语法受到 UG 的原则约束（在此例中为岛屿约束）；而这些原则在 L2 加工中同样可用。关于其他表明 L2ers 在在线加工中能够调用岛屿约束的研究，参见 Cunnings、Batterham、Felser 与 Clahsen（2010）以及 Omaki 与 Schultz（2011）等。
+
+### 对 L2 习得可观察发现的解释
+
+为了刻画 L2 学习者无意识的底层语言能力，生成语言学视角下的 L2 习得研究既不可能也并不旨在解释本书中讨论的所有可观察现象。尽管如此，这一视角仍对其中若干现象提供了洞见。
+
+**观察 1：接触输入是 L2 习得的必要条件。** 按照 UG 理论，语法的某些方面并不是通过接触输入而学习的，尤其是对普遍约束的知识。尽管如此，UG 并非在真空中运作：普遍原则与语言特定的参数设定必须由所习得语言的输入来触发。以我们的例子为例，习得具有 *wh-*movement 的 L2 的学习者需要输入来促成参数的 +*wh-*movement 取值。然而，一旦他们确定 L2 具有 *wh-*movement，他们就不需要输入来确定岛屿约束是否运作；可以说，这些约束是「免费附带」的。
+
+**观察 3：学习者最终知道的内容多于他们在输入中接触到的内容。** 这是该理论试图解释的核心观察。正是因为母语者知道的内容多于他们接触到的内容，才促使人们提出 L1 语言习得受到 UG 约束。生成 SLA 研究者在 L2 习得中也提出同样主张：L2ers 会获得 L2 的非常细微性质（如歧义与不合语法性），而这些性质由 L2 输入（无论自然输入还是课堂教学）不足以决定，也无法用 L1 语法来解释。
+
+**观察 6：第二语言学习在不同语言子系统之间的表现存在差异。** 在生成 SLA 框架下工作的研究者经常观察到：句法领域与形态领域的达成程度并不一致。正如在证据一节所述，句法习得在很大程度上是成功的；相比之下，屈折形态往往缺失，或提供得不恰当。这并不被视为 UG 约束的失败。相反，Lardiere（1998，2000）把这种不一致归因于两个领域之间的映射问题；这种问题可能非常持久，不仅出现在 L2 习得过程中，也会延续到终态。与此相关，Prévost 与 White（2000）提出 *Missing Surface Inflection Hypothesis*（MSIH），认为学习者存在较低层次的形态缺陷，使他们无法稳定实现 L2 morphology；在不确定时会诉诸默认形式，而与此同时，与之相关的 syntax 并不存在问题。
+
+近年来研究的另一种不一致涉及 syntax 与 discourse。Sorace 及其同事（Belletti、Bennatti 与 Sorace，2007；Sorace，2011；Sorace & Filiaci，2006）报告称，某些 null subject languages 的 near-native speakers 在 syntax 上达到了 native-like proficiency，但在 syntax 与 discourse 的 interface 处仍存在问题：他们在 discourse contexts 中会过度使用 overt subjects，而在这些语境中 null subjects 本应更合适。这些问题部分归因于 L1 discourse properties 的持久影响，或归因于当 syntax 必须与其他 domains 整合时出现的 processing problems。
+
+**观察 7：频率对 L2 习得的影响是有限的。** UG 理论的主张是：语言的某些性质不受频率效应影响。事实上，思路正相反：UG 使学习者能够习得与频率并无太大关联的性质；儿童在几乎没有输入或完全没有输入的情况下也能获得某些知识。例如，请看（12）所示的所谓寄生空位（parasitic gaps）。在（12a）中，句子不合语法，因为动词 *correcting* 需要一个显性的直接宾语代词（即 *them*）。（12b）这个 *yes–no* 问句出于同样原因也不合语法。但（12c）这个 *wh-*question 要好得多，尽管 *correcting* 仍然缺少一个显性宾语。
+
+- (12)
+  1. *By mistake, I filed the papers without correcting.
+  2. *Did you file the papers without correcting?
+  3. Which papers did you file without correcting?
+
+（11c）的合语法性是 UG 中编码的 *wh-*movement 性质的结果。英语母语者会习得这些句型之间的区分，尽管像（11a）与（11b）这样的句子不会在输入中出现（因为它们不合语法），而像（11c）这样的句子据推测相对罕见，甚至可能根本不存在。因此，在这类情况下频率不可能发挥作用。同样的主张也适用于 L2：L2 的某些性质预计会不受频率影响而被习得。
+
+**观察 8：学习者的第一语言对 L2 习得的影响是有限的。** 我们已经看到，某些生成 SLA 的版本（例如 FTFA）假设强烈的 L1 影响，把 L1 语法视为 L2 习得的起点（初始状态）。尽管这意味着中介语语法中所有参数最初都设定为 L1 取值，但并不意味着它们会在同一时间全部被重设为 L2 取值。因此，L1 的效应在某些情况下可能非常短暂，在另一些情况下却可能持久。取决于具体的 L1 与 L2，触发性输入可能会极早促成重设为 L2 取值；Haznedar（1997）在中心词方向参数上就展示了这一点（从中心词后置的 L1 切换到中心词前置的 L2）。相反，如果 L2 输入没有提供适当的正证据来促成重设，迁移效应就会持续更久，甚至可能成为永久现象。例如，如前所述，一些 L2ers 似乎并不把 L2 英语中前置的 *wh-* 短语视为 *wh-*movement 的证据，而是视为 *wh-* 短语可以被话题化的证据（L1 中允许这种可能）。一旦采用了这种分析，就不清楚有什么证据会促使学习者放弃它。
+
+**观察 9：教学对 L2 习得的影响是有限的。** 显然，我们无法把 UG 约束教给 L2ers（也没人试图这样做）。相反，这种抽象、复杂且细微的知识会在未被教授的情况下获得。此外，多位研究者表明，课堂教学以及教材中的信息常常具有误导性，会对某些被认为源自 UG 的复杂语言现象给出肤浅且错误的分析（例如 Belikova，2008；Bruhn-Garavito，1995）。另一方面，教学也可能在提供触发参数重设所需的 L2 输入方面有效（例如以 *wh-*questions 的形式提供支持或反对 *wh-*movement 的证据）。在课堂中向学习者提供触发性输入的尝试已经出现，但结果不一（讨论见 White，2003）。
+
+### 显性/隐性之争
+
+如前所述，本章所描述的生成语言学视角对第二语言习得的一个核心假设是：语言学习者（无论 L1 还是 L2）都会获得语言能力，它表现为抽象而无意识的语法，至少部分通过 UG 实现。若采纳 Hulstijn（2005）将显性等同于有意识知识、将隐性等同于无意识知识的界定，该理论试图解释的是 L2 学习者所获得的隐性语言知识。这并不意味着所有语言行为都反映隐性知识。语言中有些方面与所谓「百科式」知识相关，例如心理 lexicon 中的词条以及 morphological paradigms。这类知识很可能是显性的，其学习方式也可能是显性的；attention 与 memorization 等一般 cognitive processes 在其中发挥关键作用。
+
+隐性知识的习得正是生成语言学视角下 L2 acquisition 的核心。我们现在转向这样一个问题：这种隐性知识如何获得？在这里，Krashen（1981）最初提出的 acquisition 与 learning 区分变得相关（见[第 1 章](javascript:void(0))）。Schwartz（1986，1993）扩展了 Krashen 的提议，主张在 unconscious（即 implicit）的 linguistic competence（本章所采用的技术性意义）与 learned linguistic knowledge 之间加以区分。（另见 Felix，1985，他提出了类似的 division of labor：Felix 认为成年 L2 中涉及相互竞争的 systems，即 UG 与 problem-solving systems。）
+
+在生成 SLA 框架下工作的研究者一致认为，acquisition process 是 implicit 的，acquisition 的 outcome（就 unconscious knowledge 而言）也是 implicit 的。但关于 acquisition of an unconscious system 与 a more explicitly learned system 之间的确切关系，以及 linguistic input 在多大程度上可以在 classroom 中被 manipulated 以 affect language acquisition，仍然存在持续的争论。
+
+Schwartz（1986，1993）主张 linguistic competence 只能通过 implicit mechanisms 获得，并据此追随 Fodor（1983）的观点，认为 language implicates domain specific（或 modular）的 cognitive processes，与适用于其他 aspects of cognition 的更 general、nonmodular processes 不同。Language acquisition 通过 language module 内部的 mechanisms（including UG）发生，只涉及 language specific 的 implicit mechanisms。例如，language acquisition 不可能通过 conscious memorization of rules 而产生，也不可能通过 a conscious search for patterns in the input，或 by paying explicit attention to certain aspects of the input 而产生。Schwartz 还作出一个强假设（同样追随 Krashen，1981）：the outcome of explicit learning 永远无法成为 implicit acquisition system 或 implicit competence 的 input。在这种观点下，implicit 与 explicit knowledge 之间、或 explicit learning 与 implicit linguistic competence 之间，不存在 interface。
+
+Schwartz 进一步把这些观点扩展到 language classrooms 中通常可获得的 input types，认为 explicit input（如 grammar teaching 或 correction）永远不能作为 language acquisition system 的 input。相反，White（1991）在对 implicit linguistic competence 的 acquisition 作出相同假设的同时，仍主张 explicit input 可能有助于塑造 underlying competence，尤其是在 L2 positive input 无法提供 ungrammaticality evidence 的情况下。关于这些问题的较新观点，参见 Whong、Gil 与 Marsden（2013）中的相关论文。
+
+### 结论
+
+本章呈现了语言学理论所提供的视角。该理论的核心主张是：母语者的语言能力由儿童所接触到的输入不足以决定，因此语言习得涉及先天的 UG。持生成语言学视角的 SLA 研究者考察这一点在 L2 习得中是否同样成立。如果中介语能力在某些方面超越 L2 输入，尤其超越 L1 语法，那么 UG 也必然参与非母语语言习得。
+
+### 讨论问题
+
+1. 与其他 UG 框架内的研究者一样，White 依赖学习的逻辑问题与刺激贫乏论证来提出先天的语言能力。除了先天性之外，对 White 所讨论的问题还有什么其他解释？
+2. 如果 L1 习得与 L2 习得都受到 UG 约束，你会如何解释两者在结果上的差异（例如 L1 习得普遍成功，而 L2 习得并非如此；L1 学习者都会获得某种母语式发音，而多数 L2 学习者不会）？
+3. White 使用了什么证据来表明语言习得不同于其他类型的学习？你同意这些证据吗？如果不同意，你会如何解释 UG 研究的发现？
+4. UG 框架内的研究往往忽略语言学习的社会语境。为什么这对该框架而言是恰当的？
+5. 作为一套关于语言能力的理论，UG 研究的关键在于解释学习者如何知道多于他们所接触到的内容。除了 UG 之外，你认为心智—大脑中还需要哪些机制来解释语言习得？例如，是什么触发学习者从一个习得阶段进入下一个阶段的移动？
+6. 阅读本章的代表性研究，并准备一份课堂讨论：描述你将如何进行一项复现研究。务必说明你会做出哪些改变，以及这些改变的动机是什么。
+
+### 注释
+
+1. 情况比这里描述的更复杂。存在一个复杂的交互作用，取决于 *wh*-phrases 是 arguments 还是 adjuncts；这些差异可用另一种约束来解释，即 Empty Category Principle（ECP）（Chomsky，1981）。
+2. Chinese 例句省略了声调。（3）与（5）中的 Chinese 例句来自 Huang（1982）。感谢 Chen Qu 提供（4）中的例句（及 judgments）。
+3. 虽然相关 principles 的精确刻画/定义随着时间变化，但关键问题保持不变。在 GB theory 中，islands 用 bounding nodes（例如 Chomsky，1981）或 barriers（Chomsky，1986a）来定义。在 Minimalism 中，UG 指定普遍 computations（*merge*、*move*），这些 computations 受 economy principles 制约，从而产生同样的 effects（Chomsky，1995）。
+4. 许多人认为 *wh-in-situ* languages 也有 movement，但发生在 logical form（LF）层面（例如 Huang，1982）。关于 LF movement 在多大程度上受 constraints 制约，存在相当大的争论（cf. Huang，1982；Xu，1990）。
+5. Hawkins 与 Chan（1997）假设：那些 L1s 缺乏 wh-movement 的 L2ers 的 grammars 永远不会习得真正的 *wh-*movement；Schachter（1990）也是如此。在这些观点下，L2ers 会违反 island constraints。相反，Martohardjono 与 Gair（1993）以及 White（1992）并不假设 *wh-*movement 及其相关 constraints 的习得会永久失败。
