@@ -141,37 +141,35 @@ def check_bold_spacing(path: Path, raw: str) -> list[Finding]:
 
         # After bold: "**中** 文" should be "**中**文" if the bold text ends with CJK.
         end = m.end()
-        if (
-            is_cjk(last)
-            and end + 1 < len(text)
-            and text[end] == " "
-            and is_cjk(text[end + 1])
-        ):
-            findings.append(
-                Finding(
-                    path=path,
-                    line=find_line_number(text, end),
-                    kind="bold-spacing",
-                    message="Remove the space after a Chinese bold span when the next character is Chinese.",
+        if is_cjk(last) and end < len(text) and text[end] in " \t":
+            k = end
+            while k < len(text) and text[k] in " \t":
+                k += 1
+            if k < len(text) and is_cjk(text[k]):
+                findings.append(
+                    Finding(
+                        path=path,
+                        line=find_line_number(text, end),
+                        kind="bold-spacing",
+                        message="Remove the space(s) after a Chinese bold span when the next character is Chinese.",
+                    )
                 )
-            )
 
         # Before bold: "中 **文**" should be "中**文**" if the bold text begins with CJK.
         start = m.start()
-        if (
-            is_cjk(first)
-            and start - 2 >= 0
-            and text[start - 1] == " "
-            and is_cjk(text[start - 2])
-        ):
-            findings.append(
-                Finding(
-                    path=path,
-                    line=find_line_number(text, start),
-                    kind="bold-spacing",
-                    message="Remove the space before a Chinese bold span when the previous character is Chinese.",
+        if is_cjk(first) and start - 1 >= 0 and text[start - 1] in " \t":
+            j = start - 1
+            while j >= 0 and text[j] in " \t":
+                j -= 1
+            if j >= 0 and is_cjk(text[j]):
+                findings.append(
+                    Finding(
+                        path=path,
+                        line=find_line_number(text, start),
+                        kind="bold-spacing",
+                        message="Remove the space(s) before a Chinese bold span when the previous character is Chinese.",
+                    )
                 )
-            )
 
     return findings
 
@@ -241,23 +239,21 @@ def check_link_spacing(path: Path, raw: str) -> list[Finding]:
                 # If there is a space, next_ch would be ' ' not CJK, so nothing to do.
                 pass
 
-        # Special-case: avoid ')卡' with a space when the link text ends with CJK.
+        # Special-case: avoid ')卡' with any space(s) when the link text ends with CJK.
         # E.g. "...[间隔重复记忆系统](...)卡片" not "...[间隔重复记忆系统](...) 卡片".
-        if (
-            is_cjk(last)
-            and end < len(text)
-            and text[end] == " "
-            and end + 1 < len(text)
-            and is_cjk(text[end + 1])
-        ):
-            findings.append(
-                Finding(
-                    path=path,
-                    line=find_line_number(text, end),
-                    kind="link-spacing",
-                    message="Remove the space after a Chinese-titled link when the next character is Chinese.",
+        if is_cjk(last) and end < len(text) and text[end] in " \t":
+            k = end
+            while k < len(text) and text[k] in " \t":
+                k += 1
+            if k < len(text) and is_cjk(text[k]):
+                findings.append(
+                    Finding(
+                        path=path,
+                        line=find_line_number(text, end),
+                        kind="link-spacing",
+                        message="Remove the space(s) after a Chinese-titled link when the next character is Chinese.",
+                    )
                 )
-            )
 
     return findings
 
