@@ -325,7 +325,7 @@ PC：必须用 romaji 输入。手机：用假名输入。不需要讨论。
 
 ### 去哪里找学日语用的动画？
 
-看看 nyaa.si、anime-raws list，以及 [Resources](https://learnjapanese.moe/resources) 里的 Crunchyroll 和 animelon。有钱的话就看 Netflix。Crunchyroll 免费但有广告。桌面端可以关字幕，移动端不行。我听说 VRV 也能用，但它在我这里被封了 \\;(
+看看 nyaa.si、anime-raws list（生肉资源列表），以及 [Resources](https://learnjapanese.moe/resources) 里的 Crunchyroll 和 animelon。有钱的话就看 Netflix。Crunchyroll 免费但有广告。桌面端可以关字幕，移动端不行。我听说 VRV 也能用，但它在我这里被封了 \\;(
 
 ### 去哪里找学日语用的日剧？
 
