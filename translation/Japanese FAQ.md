@@ -28,7 +28,7 @@
 
 ### 你说要听和读，那我到底该听什么、读什么？
 
-生肉动画、未翻译漫画、轻小说和 VN；无字幕日剧、无字幕日语电影。换句话说……**母语内容：母语者写给母语者的内容**
+生肉动画、未翻译漫画、轻小说和视觉小说；无字幕日剧、无字幕日语电影。换句话说……**母语内容：母语者写给母语者的内容**
 
 ### 我什么时候该开始用 Anki？
 
@@ -50,7 +50,7 @@
 
 那你可以去 TheMoeWay Discord，和那里的上百位远高于那个水平的成员一起挑战他的说法。
 
-### 最简单的动画／漫画／轻小说／VN？
+### 最简单的动画／漫画／轻小说／视觉小说？
 
 Mitsuboshi Colors／Yotsubato!／GJ bu／Hanahira
 
@@ -339,11 +339,11 @@ PC：必须用 romaji 输入。手机：用假名输入。不需要讨论。
 
 Itazuraneko。如果你有钱，可以在 Amazon JP 买数字轻小说。
 
-### 去哪里找学日语用的 VN？
+### 去哪里找学日语用的视觉小说？
 
-（在 [Resources](https://learnjapanese.moe/resources) 里有列），ryuublogger，（sukebei）nyaa.si。有钱的话可以在 Steam 买 VN。如果你很幸运能上 AnimeBytes 这种私有 tracker，那你基本能找到任何你想玩的 VN。如果你（shoui）好好求我，我可以在 AnimeBytes 帮你找。真的，我会的。只要确保它不在你能免费获取的资源里。
+（在 [Resources](https://learnjapanese.moe/resources) 里有列），ryuublogger，（sukebei）nyaa.si。有钱的话可以在 Steam 买视觉小说。如果你很幸运能上 AnimeBytes 这种私有 tracker，那你基本能找到任何你想玩的视觉小说。如果你（shoui）好好求我，我可以在 AnimeBytes 帮你找。真的，我会的。只要确保它不在你能免费获取的资源里。
 
-### 怎么 text-hook VN？
+### 怎么 text-hook 视觉小说？
 
 [vn guide](https://learnjapanese.moe/vn)
 

@@ -24,6 +24,7 @@
 | review | 复习 | 指 SRS 的复习环节/复习行为。 |
 | application (as in application prompt) | 应用 | 在「应用卡片」等组合中使用。 |
 | target language | 目标语言 | 固定译法；避免简称为「目标语」。 |
+| VN (Japanese learning context) | 视觉小说 | Visual Novel 的缩写；在日语学习语境下按「视觉小说」处理。 |
 | lesson | 课程 / 课节 | 视语境选择：偏课程结构用「课节」。 |
 | REPL | REPL | 保留不译；必要时首次可加注「交互式环境」。 |
 | preamble | preamble | 指代码「前置/预置」部分；保留英文便于对照。 |

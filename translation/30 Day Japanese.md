@@ -1134,7 +1134,7 @@ A：<https://www.youtube.com/watch?v=r5Qxr8OGkaA>
 -   看完 Cure Dolly 的语法指南
 -   学完《Dictionary of Japanese Grammar》里的所有日语语法。为此有一个 Anki 牌组在[这里](https://ankiweb.net/shared/info/1013111837)。一共有 629 个语法点，从初级到高级都有。
 -   用[这份指南](https://docs.google.com/document/d/1ReBf08JFK4n0PXdOxThAfWuiK9UWVZEWWzeKSECWTQo)开始学习日语发音与音高重音
--   开始读更长的文本，比如视觉小说。参加 TheMoeWay Discord 的 VN 俱乐部，和其他做同样事情的人一起玩。
+-   开始读更长的文本，比如视觉小说。参加 TheMoeWay Discord 的视觉小说俱乐部，和其他做同样事情的人一起玩。
 -   用这个资源训练你识别与阅读日语数字的能力：[Practice Japanese Numbers](https://langpractice.com/japanese/)。
 -   在你完成 Kaishi 1.5k 牌组之后的某个时间点，开始建立一个「mining」用的 Anki 牌组。
 -   从开始读起算，6 个月内通关一部视觉小说。
