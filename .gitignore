@@ -5,3 +5,5 @@ __pycache__/
 csv/
 tmp/
 html/
+source/
+done/
