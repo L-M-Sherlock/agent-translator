@@ -40,7 +40,7 @@
 
 同时，句法学家还会预测 *want to* 缩约为 *wanna* 的限制。因此，（7）是可以的，因为在缩约想要发生的位置，并没有痕迹介入：
 
-- (7) Whoi do you want to invite $t_i$ to dinner? → Who do you wanna invite to dinner?
+- (7) $Who_i$ do you want to invite $t_i$ to dinner? → Who do you wanna invite to dinner?
 
 不过，所有英语使用者都会同意，（8）非常糟糕：
 
