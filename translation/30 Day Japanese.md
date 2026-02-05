@@ -36,7 +36,7 @@
 
 所以，我建议你先读[这里](https://gohoneko.neocities.org/grammar/taekim#_Hiragana)。
 
-一直读到平假名与片假名那一节结束为止，也就是在「Kanji」那一节之前停下。
+一直读到平假名与片假名那一节结束为止，也就是在「汉字」那一节之前停下。
 
 这段文字相当长，可能需要一些时间。
 
@@ -56,7 +56,7 @@
 
 点击「show/hide options」
 
-把所有分类都点「check all」（Hiragana、Hiragana combinations、Katakana、Katakana combinations）。字体不用管。
+把所有分类都点「check all」（平假名、平假名组合、片假名、片假名组合）。字体不用管。
 
 在文本框里输入正确的罗马字（romaji）。你会用这种方式练习假名。
 

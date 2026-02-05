@@ -1,4 +1,4 @@
-# 学汉字（Kanji）
+# 学汉字
 
 [Learning Kanji](https://learnjapanese.moe/kanji/)
 
@@ -17,7 +17,7 @@
 我不是在说学词，比如学[夢中](https://jisho.org/word/%E5%A4%A2%E4%B8%AD)并配上一个好用的例句。![🙂](https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f642.svg)  
 我指的是这种：
 
-> Kanji: 涯  
+> 汉字：涯  
 > Kun: はて  
 > On: ガイ
 
@@ -39,4 +39,3 @@
 不管你用 RTK、KKLC、WaniKani 等等多么花哨、看起来很酷的方式去记那些超过 2,000 个汉字，你最终仍然需要读几百小时的日语、并记住大量词汇，才可能真正「学会」一个汉字。我不认为一个汉字算「学会」，除非你知道所有常见的、包含这个汉字的词，并且能完全凭记忆把它写出来。别「学汉字」，学词。别只是「学」汉字，要去「感受」汉字。
 
 特别致谢：Tae Kim，谢谢你的点子。
-

@@ -15,6 +15,10 @@
 | prompt (Spaced repetition context) | 卡片 | 指间隔重复系统中的「卡片」（题卡/复习卡），不是「提示」。 |
 | raw (Japanese learning materials context) | 生肉 | 指未翻译的原始材料；可带日语字幕；常与「熟肉」（翻译/字幕版）对照。 |
 | raw listening | 无字幕听力 | 特指无字幕听（无英/中字幕；通常也不带日语字幕）。 |
+| hiragana | 平假名 | 日语假名之一。 |
+| katakana | 片假名 | 日语假名之一。 |
+| kana | 假名 | 平假名与片假名的统称；如需保留读音可写作「假名（kana）」。 |
+| kanji | 汉字 | 日语书写系统之一；指汉字字形。 |
 | spaced repetition memory system | 间隔重复记忆系统 | 也可简称「间隔重复系统」。 |
 | recall | 回忆 | 作为名词/动词按语境调整；避免译为「召回」。 |
 | review | 复习 | 指 SRS 的复习环节/复习行为。 |
