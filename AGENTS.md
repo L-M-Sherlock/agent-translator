@@ -13,7 +13,10 @@
 ## File Operations Workflow
 
 1. 待翻译的文本以 Markdown 格式存放在 `source/` 文件夹下。
-2. 完成一篇翻译时：
+2. 翻译过程中（尚未完成整篇时）：每完成一个章节/分段并完成四轮翻译后，必须将 Round 4 的最终译文写入文件保存：
+   - 若整篇已完成：直接写入 `translation/`（例如：`translation/The_Under_Achieving_School.md`）。
+   - 若尚未完成：先写入 `tmp/`（例如：`tmp/28. Sleep and learning.part01.md`），待全篇完成后再合并到 `translation/`。
+3. 完成一篇翻译时：
    - 将原文本移动到 `done/` 文件夹下；
    - 将译文结果存放在 `translation/` 文件夹下；
    - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
