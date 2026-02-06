@@ -8,6 +8,7 @@ Checks:
 - No Chinese italics (single *...* or _..._) outside code.
 - Spacing around Markdown links based on whether the link text boundary is Chinese vs ASCII.
 - The first link under the H1 in each translation file matches the original (done/) first link.
+- Link/image URL destinations in each translation file match the original (done/) file.
 """
 
 from __future__ import annotations
@@ -15,6 +16,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -75,6 +77,94 @@ def iter_links(md: str):
     # Yields: (start_index, end_index, link_text, url)
     for m in re.finditer(r"\[([^\]]+)\]\(([^)\s]+)\)", md):
         yield m.start(), m.end(), m.group(1), m.group(2)
+
+
+def _iter_inline_links_and_images(md: str):
+    """
+    Iterate inline markdown links and images.
+
+    Notes:
+    - Callers should pass strip_code(...) output to ignore code blocks/snippets.
+    - Destinations may include an optional title: (url "title"). We only keep the URL.
+    """
+
+    # Group 1: optional '!' (image marker)
+    # Group 2: link text / alt text
+    # Group 3: destination (url + optional title)
+    for m in re.finditer(r"(!?)\[([^\]]+)\]\(([^)\n]+)\)", md):
+        dest = (m.group(3) or "").strip()
+        if not dest:
+            continue
+
+        # CommonMark allows titles: (url "title"). Only compare the URL portion.
+        url = dest.split()[0]
+        if url.startswith("<") and url.endswith(">"):
+            url = url[1:-1]
+
+        yield (m.group(1) == "!"), (m.group(2) or ""), url
+
+
+def _url_counter(md: str, *, include_images: bool) -> Counter[str]:
+    c: Counter[str] = Counter()
+    text = strip_code(md)
+    for is_image, _text, url in _iter_inline_links_and_images(text):
+        if is_image and not include_images:
+            continue
+        if (not is_image) and include_images:
+            continue
+        c[url] += 1
+    return c
+
+
+def check_link_urls_match_original(
+    translation_path: Path, translation_raw: str, done_path: Path, done_raw: str
+) -> list[Finding]:
+    """
+    Ensure the translation preserves all inline link/image destinations.
+
+    We compare URL multisets (Counter), not link texts, since link texts are translated.
+    """
+    findings: list[Finding] = []
+
+    done_links = _url_counter(done_raw, include_images=False)
+    trans_links = _url_counter(translation_raw, include_images=False)
+    done_imgs = _url_counter(done_raw, include_images=True)
+    trans_imgs = _url_counter(translation_raw, include_images=True)
+
+    missing_links = done_links - trans_links
+    extra_links = trans_links - done_links
+    missing_imgs = done_imgs - trans_imgs
+    extra_imgs = trans_imgs - done_imgs
+
+    if not (missing_links or extra_links or missing_imgs or extra_imgs):
+        return findings
+
+    def _fmt(counter: Counter[str]) -> str:
+        items = counter.most_common(5)
+        parts = [f"{n}x {u}" for u, n in items]
+        suffix = "" if len(counter) <= 5 else f" (and {len(counter) - 5} more)"
+        return "; ".join(parts) + suffix
+
+    msg_parts: list[str] = []
+    if missing_links:
+        msg_parts.append(f"missing link URL(s): {_fmt(missing_links)}")
+    if extra_links:
+        msg_parts.append(f"extra link URL(s): {_fmt(extra_links)}")
+    if missing_imgs:
+        msg_parts.append(f"missing image URL(s): {_fmt(missing_imgs)}")
+    if extra_imgs:
+        msg_parts.append(f"extra image URL(s): {_fmt(extra_imgs)}")
+
+    findings.append(
+        Finding(
+            path=translation_path,
+            line=1,
+            kind="link-urls",
+            message="Link/image URL mismatch vs original (done/): "
+            + "; ".join(msg_parts),
+        )
+    )
+    return findings
 
 
 def check_no_chinese_italics(path: Path, raw: str) -> list[Finding]:
@@ -314,6 +404,9 @@ def main() -> int:
             done_raw = done_path.read_text(encoding="utf-8")
             findings.extend(
                 check_first_link_matches_original(path, raw, done_path, done_raw)
+            )
+            findings.extend(
+                check_link_urls_match_original(path, raw, done_path, done_raw)
             )
 
     if findings:
