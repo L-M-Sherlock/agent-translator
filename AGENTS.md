@@ -25,7 +25,8 @@
 3. 完成一篇翻译时：
    - 将原文本移动到 `done/` 文件夹下；
    - 将译文结果存放在 `translation/` 文件夹下；
-   - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
+   - 运行格式检查脚本 `uv run scripts/check_format.py`，根据检查结果修正格式问题；
+   - **强调符号（emphasis）人工复核**：不要把 `**` 插在中文词中间（例如 `**本博**客`、`**可**能`）。若 `check_format` 提示强调相关问题，只能按 `csv/` 对齐回原文逐行改译；禁止“批量自动补 `**` 后直接提交”；
    - 运行导出脚本 `uv run python scripts/export_csv.py ...`，确保译文和原文段落一一对应（输出到 `csv/`，无需提交）；
    - 清空 `tmp/` 中的中间稿（保留空文件夹即可）；
    - 使用 Git 提交需要提交的文件变更（至少包含 `translation/` 下的新增/修改）。
@@ -44,8 +45,8 @@
 
 1. 确认待翻译原文位于 `source/Your Book Review How Children Fail.md`；标题下第一个链接为原文链接，译文中保留其英文链接文本与 URL，不翻译链接文本。
 2. 按原文结构分段翻译（例如 `**1:**` 到 `**9:**`），每完成一段并完成四轮后，将 Round 4 终稿写入 `tmp/Your Book Review How Children Fail.partXX.md`。
-3. 每写完一个分段就运行一次格式检查：`uv run python scripts/check_format.py`；确保 `tmp/` 中间稿也能通过检查，再进入下一段。
-4. 全文完成后按顺序合并所有 `tmp/*.partXX.md`，生成终稿：`translation/Your Book Review How Children Fail.md`，并再次运行 `uv run python scripts/check_format.py`。
+3. 每写完一个分段就运行一次格式检查：`uv run scripts/check_format.py`；确保 `tmp/` 中间稿也能通过检查，再进入下一段。
+4. 全文完成后按顺序合并所有 `tmp/*.partXX.md`，生成终稿：`translation/Your Book Review How Children Fail.md`，并再次运行 `uv run scripts/check_format.py --emphasis-scope all`。
 5. 将原文移动到 `done/Your Book Review How Children Fail.md`。
 6. 导出对齐 CSV（不提交）：`uv run python scripts/export_csv.py --src "done/Your Book Review How Children Fail.md" --trans "translation/Your Book Review How Children Fail.md"`（输出到 `csv/`）。
 7. 清空 `tmp/` 中间稿（保留空文件夹即可），然后 `git add` 并提交（通常只提交 `translation/` 下的新译文文件）。
@@ -66,6 +67,10 @@
 
 - “标题下第一个链接”指：标题之后的第一段非空内容中出现的第一个 Markdown 链接（`[text](url)`），不包含图片链接（`![]()`）。该链接文本保留英文不译（URL 保持不变）。
 - `export_csv.py` 的对齐口径：以“去掉空行后的逐行对应”为准；如对齐失败，优先通过合并/拆分译文行来匹配原文的非空行数量与顺序。
+- 强调符号（emphasis）的对齐口径：以 `csv/` 的逐行对齐为准。原文的 `*...*` / `**...**` 在译文中应保留“强调这一语义点”（中文用 `**...**`，不要用 `*斜体*`）。当原文强调点无法自然落在中文的单词边界上时，优先：
+  - 改写句子，让强调落在一个完整短语上；
+  - 或把强调扩大到完整短语（避免把中文词拆开加粗）。
+  - 不要为了“数量对齐”随意强调无关的语气词/连词。
 
 ### Round 1：直译阶段（Literal Translation）
 
@@ -107,3 +112,5 @@
 3. 不对中文使用 *斜体*；强调用 **粗体** 或引号「」或书名号《》按语境选择。
 4. 中文与英文之间、中文与数字之间要加空格；对 Markdown 链接按链接文本（`[]` 内）的边界字符处理：若链接文本的相邻边界是中文（例如：`一个[间隔重复记忆系统](...)`、`[间隔重复记忆系统](...)卡片`），则与相邻中文之间不必加空格；若链接文本的相邻边界是英文或数字（例如：`由 [Gary Bernhardt](...)`），则在中文与链接之间加空格。
 5. 人名（著名人物除外）、软件名、论文名不翻译；论文名不翻译是为了便于检索。
+6. 强调符号位置必须“顺中文语义”且不得拆词：避免 `**本博**客`、`**可**能` 这类把中文词拆开的写法。提交前可用以下命令快速定位高风险加粗（需要逐处人工确认）：
+   - `rg -nP '\\*\\*[^*]{1,4}\\*\\*(?=\\p{Han})' translation/<file>.md`
