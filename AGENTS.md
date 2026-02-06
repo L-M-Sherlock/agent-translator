@@ -8,7 +8,11 @@
 
 ## Translation Workflow (4 Rounds)
 
-对用户提供的英文原文，必须按顺序完成四轮翻译，并在每一轮中输出对应内容。
+对用户提供的英文原文，必须按顺序完成四轮翻译。
+
+说明：
+- 四轮翻译是内部工作流；对话中是否逐轮输出译文，以用户当次要求为准（用户可要求不在对话中展示译文，仅落盘）。
+- 无论对话中是否展示，**每完成一个章节/分段并完成四轮后，都必须将 Round 4 的最终译文写入文件保存**（见下文的文件流程）。
 
 ## File Operations Workflow
 
@@ -16,12 +20,17 @@
 2. 翻译过程中（尚未完成整篇时）：每完成一个章节/分段并完成四轮翻译后，必须将 Round 4 的最终译文写入文件保存：
    - 若整篇已完成：直接写入 `translation/`（例如：`translation/The_Under_Achieving_School.md`）。
    - 若尚未完成：先写入 `tmp/`（例如：`tmp/28. Sleep and learning.part01.md`），待全篇完成后再合并到 `translation/`。
+   - 分段粒度（优先级从高到低）：按二级标题（`##`）拆分；按作者显式分段标记（例如 `**1:**`、`**2:**`）拆分；按自然段拆分。
+   - 分段命名：使用补零序号保证字典序即原文顺序，例如 `tmp/<basename>.part01.md`、`tmp/<basename>.part02.md`。
 3. 完成一篇翻译时：
    - 将原文本移动到 `done/` 文件夹下；
    - 将译文结果存放在 `translation/` 文件夹下；
    - 运行格式检查脚本 `uv run python scripts/check_format.py`，根据检查结果修正格式问题；
    - 运行导出脚本 `uv run python scripts/export_csv.py ...`，确保译文和原文段落一一对应（输出到 `csv/`，无需提交）；
-   - 使用 Git 提交以上文件变更（包含移动与新增的文件）。
+   - 清空 `tmp/` 中的中间稿（保留空文件夹即可）；
+   - 使用 Git 提交需要提交的文件变更（至少包含 `translation/` 下的新增/修改）。
+
+> 注意：本仓库通常会把 `source/`、`done/`、`tmp/`、`csv/` 加入 `.gitignore`。在这种配置下，“移动原文到 done/”是本地归档动作，不会进入 Git 提交；提交内容通常只包含 `translation/`（以及必要的脚本/规则变更）。
 
 ### Long Articles
 
@@ -35,7 +44,7 @@
 
 1. 确认待翻译原文位于 `source/Your Book Review How Children Fail.md`；标题下第一个链接为原文链接，译文中保留其英文链接文本与 URL，不翻译链接文本。
 2. 按原文结构分段翻译（例如 `**1:**` 到 `**9:**`），每完成一段并完成四轮后，将 Round 4 终稿写入 `tmp/Your Book Review How Children Fail.partXX.md`。
-3. 每写完一个分段就运行一次格式检查：`uv run python scripts/check_format.py`，并按提示修正（例如 `bold-spacing`：`价值**就是**这件事` 这类加粗前后不要夹空格）。
+3. 每写完一个分段就运行一次格式检查：`uv run python scripts/check_format.py`；确保 `tmp/` 中间稿也能通过检查，再进入下一段。
 4. 全文完成后按顺序合并所有 `tmp/*.partXX.md`，生成终稿：`translation/Your Book Review How Children Fail.md`，并再次运行 `uv run python scripts/check_format.py`。
 5. 将原文移动到 `done/Your Book Review How Children Fail.md`。
 6. 导出对齐 CSV（不提交）：`uv run python scripts/export_csv.py --src "done/Your Book Review How Children Fail.md" --trans "translation/Your Book Review How Children Fail.md"`（输出到 `csv/`）。
@@ -52,6 +61,11 @@
 - 在「间隔重复记忆系统」语境下，`prompt` 指「卡片」，不要译为「提示」（例如：application prompt / recall prompt →「应用卡片」/「回忆卡片」）。
 - 每篇原文中标题下的第一个链接是原文链接：在译文里保留其英文链接文本与 URL，不要翻译该链接文本。
 - 除上述「原文链接」外，正文中的 Markdown 链接文本一般需要翻译为中文（保留 URL 不变）；但人名、软件名、论文名等专有名词按规则保留不译。
+
+## Definition Notes
+
+- “标题下第一个链接”指：标题之后的第一段非空内容中出现的第一个 Markdown 链接（`[text](url)`），不包含图片链接（`![]()`）。该链接文本保留英文不译（URL 保持不变）。
+- `export_csv.py` 的对齐口径：以“去掉空行后的逐行对应”为准；如对齐失败，优先通过合并/拆分译文行来匹配原文的非空行数量与顺序。
 
 ### Round 1：直译阶段（Literal Translation）
 
@@ -76,12 +90,14 @@
 
 - 作为团队领导综合各轮成果，取长补短并最终定稿。
 - 定稿必须：忠实原文、语言流畅、表达准确、通俗易懂；不改变段落结构；满足中文与 Markdown 格式要求。
-- **将最终译文放在 ` ``` ` 标记的代码块中。**
+- 若用户要求在对话中展示译文：将最终译文放在 ` ``` ` 标记的代码块中。
+- 若用户要求“不输出译文，只写入文件”：写入 `translation/`/`tmp/` 的 Markdown 文件不要再额外包一层外部代码块（避免变成“代码块里的 Markdown”）。
 
 ## Output Format (Strict)
 
-- Round 2 / 3：必须同时包含【思考】与【翻译】。
-- Round 4：输出【思考】与【翻译】，且【翻译】必须是代码块中的最终译文。
+- 当用户要求在对话中输出译文时：
+  - Round 2 / 3：必须同时包含【思考】与【翻译】。
+  - Round 4：输出【思考】与【翻译】，且【翻译】必须是代码块中的最终译文。
 - 除翻译流程要求的结构外，不要额外添加总结、致谢、解释或附录。
 
 ## Chinese Formatting Rules
