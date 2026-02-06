@@ -215,7 +215,7 @@ Aldwayan 等（2010）检验内志阿拉伯语说话者在其 L2 中是否会呈
 
 **观察 6：第二语言学习在不同语言子系统之间的表现存在差异。** 在生成 SLA 框架下工作的研究者经常观察到：句法领域与形态领域的达成程度并不一致。正如在证据一节所述，句法习得在很大程度上是成功的；相比之下，屈折形态往往缺失，或提供得不恰当。这并不被视为 UG 约束的失败。相反，Lardiere（1998，2000）把这种不一致归因于两个领域之间的映射问题；这种问题可能非常持久，不仅出现在 L2 习得过程中，也会延续到终态。与此相关，Prévost 与 White（2000）提出 *Missing Surface Inflection Hypothesis*（MSIH），认为学习者存在较低层次的形态缺陷，使他们无法稳定实现 L2 morphology；在不确定时会诉诸默认形式，而与此同时，与之相关的句法并不存在问题。
 
-近年来研究的另一种不一致涉及句法与 discourse。Sorace 及其同事（Belletti、Bennatti 与 Sorace，2007；Sorace，2011；Sorace & Filiaci，2006）报告称，某些 null subject languages 的 near-native speakers 在句法上达到了 native-like proficiency，但在句法与 discourse 的 interface 处仍存在问题：他们在 discourse contexts 中会过度使用 overt subjects，而在这些语境中 null subjects 本应更合适。这些问题部分归因于 L1 discourse properties 的持久影响，或归因于当句法必须与其他 domains 整合时出现的 processing problems。
+近年来研究探讨的另一种差异涉及句法与语篇。Sorace 及其同事（Belletti、Bennatti 与 Sorace，2007；Sorace，2011；Sorace & Filiaci，2006）报告称，某些空主语语言的近母语水平者虽然在句法上达到了母语般的熟练度，但在句法与语篇的接口处仍存在问题：他们在语篇语境中会过度使用显性主语，而在这些语境中本应更适合使用空主语。这些问题部分归因于第一语言（L1）语篇属性的持久影响，或归因于当句法必须与其他认知域整合时出现的加工问题。
 
 **观察 7：频率对 L2 习得的影响是有限的。** UG 理论的主张是：语言的某些性质不受频率效应影响。事实上，思路正相反：UG 使学习者能够习得与频率并无太大关联的性质；儿童在几乎没有输入或完全没有输入的情况下也能获得某些知识。例如，请看（12）所示的所谓寄生空位（parasitic gaps）。在（12a）中，句子不合语法，因为动词 *correcting* 需要一个显性的直接宾语代词（即 *them*）。（12b）这个 *yes–no* 问句出于同样原因也不合语法。但（12c）这个特殊疑问句要好得多，尽管 *correcting* 仍然缺少一个显性宾语。
 
