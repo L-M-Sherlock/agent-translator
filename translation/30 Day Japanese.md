@@ -92,14 +92,14 @@
 《摇曳百合》（Yuru Yuri）  
 《光之美少女》（Precure）（任意）  
 《珈百璃的堕落》（Gabriel Dropout）  
-《学园乌托邦》（Gakuen Utopia Manabi Straight）  
+《校园乌托邦 学美向前冲！》（Gakuen Utopia Manabi Straight）  
 《轻音少女》（K-on）  
 《青春之旅》（Ao haru Ride）  
 《白兔糖》（Usagi Drop）  
 《飞翔的魔女》（Flying Witch）  
 《秒速 5 厘米》（Byousoku 5 Centimeter）  
 《黄金拼图》（Kiniro Mosaic）  
-《新游戏！》（New Game）
+NEW GAME!
 
 去看一下[动画资源](https://learnjapanese.moe/resources/#anime)，里面有找动画的渠道。更推荐把动画下载下来，因为这样更容易随身带着看。
 
