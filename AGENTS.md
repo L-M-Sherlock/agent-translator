@@ -29,6 +29,18 @@
 - `tmp/` 中的内容不作为最终交付物；完成终稿后以 `translation/` 中的文件为准。
 - 完成终稿并提交前，清空 `tmp/` 中的中间稿（保留空文件夹即可），避免残留草稿造成混淆。
 
+### Example: Your Book Review How Children Fail
+
+以下是一次完整翻译的实操范例（以 `Your Book Review How Children Fail` 为例），用于说明文件流转与工具运行顺序：
+
+1. 确认待翻译原文位于 `source/Your Book Review How Children Fail.md`；标题下第一个链接为原文链接，译文中保留其英文链接文本与 URL，不翻译链接文本。
+2. 按原文结构分段翻译（例如 `**1:**` 到 `**9:**`），每完成一段并完成四轮后，将 Round 4 终稿写入 `tmp/Your Book Review How Children Fail.partXX.md`。
+3. 每写完一个分段就运行一次格式检查：`uv run python scripts/check_format.py`，并按提示修正（例如 `bold-spacing`：`价值**就是**这件事` 这类加粗前后不要夹空格）。
+4. 全文完成后按顺序合并所有 `tmp/*.partXX.md`，生成终稿：`translation/Your Book Review How Children Fail.md`，并再次运行 `uv run python scripts/check_format.py`。
+5. 将原文移动到 `done/Your Book Review How Children Fail.md`。
+6. 导出对齐 CSV（不提交）：`uv run python scripts/export_csv.py --src "done/Your Book Review How Children Fail.md" --trans "translation/Your Book Review How Children Fail.md"`（输出到 `csv/`）。
+7. 清空 `tmp/` 中间稿（保留空文件夹即可），然后 `git add` 并提交（通常只提交 `translation/` 下的新译文文件）。
+
 ## Tooling (uv + ruff)
 
 - 使用 uv 管理脚本运行环境：首次运行前执行 `uv sync --dev`。
