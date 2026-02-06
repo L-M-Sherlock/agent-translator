@@ -81,25 +81,25 @@
 
 这里有一些建议（当然，你也可以选任何你想看的）：
 
-Love Live! (Any)  
-Non Non Biyori  
-Kimetsu no Yaiba  
-Koe no Katachi  
-Hotarubi no Mori e  
-Toki wo Kakeru Shoujo  
-Himouto! Umaru-chan  
-Nakitai Watashi wa Neko o Kaburu  
-Yuru Yuri  
-Precure (Any)  
-Gabriel Dropout  
-Gakuen Utopia Manabi Straight  
-K-on  
-Ao haru Ride  
-Usagi Drop  
-Flying Witch  
-Byousoku 5 Centimeter  
-Kiniro Mosaic  
-New Game
+《Love Live! 学园偶像计划》（Love Live!）（任意）  
+《悠哉日常大王》（Non Non Biyori）  
+《鬼灭之刃》（Kimetsu no Yaiba）  
+《声之形》（Koe no Katachi）  
+《萤火之森》（Hotarubi no Mori e）  
+《穿越时空的少女》（Toki wo Kakeru Shoujo）  
+《干物妹！小埋》（Himouto! Umaru-chan）  
+《想哭的我戴上了猫的面具》（Nakitai Watashi wa Neko o Kaburu）  
+《摇曳百合》（Yuru Yuri）  
+《光之美少女》（Precure）（任意）  
+《珈百璃的堕落》（Gabriel Dropout）  
+《学园乌托邦》（Gakuen Utopia Manabi Straight）  
+《轻音少女》（K-on）  
+《青春之旅》（Ao haru Ride）  
+《白兔糖》（Usagi Drop）  
+《飞翔的魔女》（Flying Witch）  
+《秒速 5 厘米》（Byousoku 5 Centimeter）  
+《黄金拼图》（Kiniro Mosaic）  
+《新游戏！》（New Game）
 
 去看一下[动画资源](https://learnjapanese.moe/resources/#anime)，里面有找动画的渠道。更推荐把动画下载下来，因为这样更容易随身带着看。
 
