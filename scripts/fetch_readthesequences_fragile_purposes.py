@@ -123,6 +123,24 @@ def _strip_site_chrome(md: str, title: str) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
+def _strip_footer(md: str) -> str:
+    """
+    The site appends a footer (discussion/star icon, sequence navigation, and
+    reference definitions). After link normalization, we can safely drop it.
+    """
+    lines = md.splitlines()
+    for i, ln in enumerate(lines):
+        if "wiki/uploads/star.svg" in ln:
+            lines = lines[:i]
+            break
+    # Trim leading/trailing blank lines.
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def _fix_nonstandard_markdown(md: str) -> str:
     """
     The site's ?action=markdown output contains a few nonstandard constructs.
@@ -142,6 +160,32 @@ def _fix_nonstandard_markdown(md: str) -> str:
     return md
 
 
+def _pandoc_to_gfm(md: str) -> str:
+    """
+    Convert reference-style links like `[text][8]` + `[8]: https://...` into
+    inline links: `[text](https://...)`.
+    """
+    import shutil
+    import subprocess
+
+    pandoc = shutil.which("pandoc")
+    if not pandoc:
+        return md
+
+    # Pandoc 2.x: gfm writer defaults to inline links unless --reference-links.
+    proc = subprocess.run(
+        [pandoc, "-f", "gfm", "-t", "gfm", "--wrap=none"],
+        input=md,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        # If pandoc fails for any reason, keep the original markdown.
+        return md
+    return proc.stdout
+
+
 def _write_markdown(out_path: Path, title: str, url: str, body_md: str) -> None:
     # First link under the title is the original link (kept as-is for translators).
     content = f"# {title}\n\n[{title}]({url})\n\n{body_md}"
@@ -157,6 +201,8 @@ def fetch_all(pages: list[Page], html_dir: Path, md_dir: Path) -> None:
         raw_md = _fetch(f"{page.url}?action=markdown")
         body_md = _strip_site_chrome(raw_md, page.title)
         body_md = _fix_nonstandard_markdown(body_md)
+        body_md = _pandoc_to_gfm(body_md)
+        body_md = _strip_footer(body_md)
         _write_markdown(md_dir / f"{page.title}.md", page.title, page.url, body_md)
 
 
