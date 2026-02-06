@@ -26,7 +26,6 @@
 4.  取决于你看的作品，它可以很接近现实口语（例如 Shinkai Makoto 的电影）。
 5.  相比无聊的教材，无论从日语本身还是从乐趣而言，动画都强太多了。
 
-![LoveLive! Muse](https://learnjapanese.moe/img/muse2_crop.jpg) 附言：你看的动画要么带**日语字幕**，要么是**完全生肉**。Reddit 上可能有人会说：有些人看了很久英语字幕的动画也还是不会日语——他们说得没错。但我们不看英语字幕：我们看生肉，或者至少看日语字幕。
+![LoveLive! Muse](https://learnjapanese.moe/img/muse2_crop.jpg) 附言：你看的动画要么带**日语字幕**，要么是**完全无字幕**。Reddit 上可能有人会说：有些人看了很久英语字幕的动画也还是不会日语——他们说得没错。但我们不看英语字幕：我们看无字幕，或者至少看日语字幕。
 
 祝你沉浸愉快！![😄](https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f604.svg)
-
