@@ -9,6 +9,7 @@ Checks:
 - Spacing around Markdown links based on whether the link text boundary is Chinese vs ASCII.
 - The first link under the H1 in each translation file matches the original (done/) first link.
 - Link/image URL destinations in each translation file match the original (done/) file.
+- Preserve Markdown emphasis from the original (e.g. `*emphasis*`, `**strong**`) on a best-effort basis.
 """
 
 from __future__ import annotations
@@ -164,6 +165,139 @@ def check_link_urls_match_original(
             + "; ".join(msg_parts),
         )
     )
+    return findings
+
+
+def _iter_nonempty_lines_with_state(raw: str):
+    """
+    Yield non-empty lines with their original line number and whether they're inside a fenced code block.
+    """
+    in_fence = False
+    for lineno, line in enumerate(raw.splitlines(), start=1):
+        stripped = line.strip()
+
+        # Treat the fence marker line as code and keep it for alignment.
+        if stripped.startswith("```"):
+            yield lineno, True, line
+            in_fence = not in_fence
+            continue
+
+        if stripped == "":
+            continue
+
+        yield lineno, in_fence, line
+
+
+RE_STRONG = re.compile(r"(?<!\\)\*\*([^*\n]+?)\*\*(?!\*)")
+RE_EMPH_ASTERISK = re.compile(r"(?<!\\)(?<!\*)\*([^*\n]+?)\*(?!\*)")
+RE_EMPH_UNDERSCORE = re.compile(r"(?<!_)_([^_\n]+?)_(?!_)")
+
+
+def _extract_emphasis_spans(line: str) -> list[str]:
+    """
+    Extract emphasis/strong spans from a single line, ignoring inline code.
+
+    This is intentionally heuristic (Markdown emphasis is tricky), but good enough to
+    catch missing emphasis markers like `*successfully*`.
+    """
+    # Drop inline code.
+    s = re.sub(r"`[^`]*`", "", line)
+    # Don't treat escaped markers as emphasis.
+    s = s.replace(r"\*", "").replace(r"\_", "")
+
+    spans: list[str] = []
+    spans.extend((m.group(1) or "") for m in RE_STRONG.finditer(s))
+    spans.extend((m.group(1) or "") for m in RE_EMPH_ASTERISK.finditer(s))
+
+    # Underscore emphasis: only count if it looks like actual emphasis, not an identifier/URL.
+    for m in RE_EMPH_UNDERSCORE.finditer(s):
+        inner = m.group(1) or ""
+        if not inner:
+            continue
+        before = s[m.start() - 1] if m.start() - 1 >= 0 else ""
+        after = s[m.end()] if m.end() < len(s) else ""
+        before_ok = before == "" or before.isspace() or before in "([{\"'“「『"
+        after_ok = (
+            after == "" or after.isspace() or after in ")]}\"'”」』，。！？；：、.!?;:"
+        )
+        if before_ok and after_ok:
+            spans.append(inner)
+
+    # Drop empty spans.
+    spans = [sp for sp in spans if sp]
+    return spans
+
+
+def check_emphasis_preserved(
+    translation_path: Path, translation_raw: str, done_path: Path, done_raw: str
+) -> list[Finding]:
+    """
+    Best-effort check for preserving Markdown emphasis from original to translation.
+
+    Strategy:
+    - Compare non-empty lines 1:1 (same pairing used by export_csv.py).
+    - If the source line contains any emphasis spans that look like "inline emphasis"
+      (no spaces), require the translation line to contain at least one emphasis/strong span.
+
+    This catches common misses like forgetting to preserve `*successfully*` emphasis, while
+    being tolerant of translators choosing different emphasis placement within a sentence.
+    """
+    findings: list[Finding] = []
+
+    src_lines = list(_iter_nonempty_lines_with_state(done_raw))
+    trans_lines = list(_iter_nonempty_lines_with_state(translation_raw))
+
+    if len(src_lines) != len(trans_lines):
+        findings.append(
+            Finding(
+                path=translation_path,
+                line=1,
+                kind="alignment",
+                message=(
+                    "Non-empty line count mismatch vs original (done/). "
+                    f"source={len(src_lines)} translation={len(trans_lines)}."
+                ),
+            )
+        )
+        return findings
+
+    for (src_lineno, src_in_code, src_line), (
+        trans_lineno,
+        trans_in_code,
+        trans_line,
+    ) in zip(src_lines, trans_lines):
+        if src_in_code or trans_in_code:
+            continue
+
+        src_spans = _extract_emphasis_spans(src_line)
+        if not src_spans:
+            continue
+
+        # Only require preservation for "inline" emphasis (single tokens) to reduce false positives
+        # on italicized multi-word titles that translators may convert to 《书名号》.
+        src_inline_spans = [
+            sp for sp in src_spans if " " not in sp and RE_ASCII_ALNUM.search(sp)
+        ]
+        if not src_inline_spans:
+            continue
+
+        trans_spans = _extract_emphasis_spans(trans_line)
+        if trans_spans:
+            continue
+
+        findings.append(
+            Finding(
+                path=translation_path,
+                line=trans_lineno,
+                kind="emphasis",
+                message=(
+                    "Source line uses emphasis but translation line has none; "
+                    f"preserve emphasis (e.g. convert `*...*` to `**...**`). "
+                    f"source emphasis: {', '.join(src_inline_spans[:5])}"
+                ),
+            )
+        )
+
     return findings
 
 
@@ -381,6 +515,21 @@ def check_first_link_matches_original(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=".", help="Repo root (default: .)")
+    parser.add_argument(
+        "--emphasis-scope",
+        choices=("changed", "all", "off"),
+        default="changed",
+        help=(
+            "Which translation files to run the emphasis-preservation check on: "
+            "`changed` (default) only checks git-changed translation/*.md; "
+            "`all` checks all translation/*.md; `off` disables the check."
+        ),
+    )
+    parser.add_argument(
+        "--strict-emphasis",
+        action="store_true",
+        help="Treat emphasis-preservation findings as errors (default: warnings).",
+    )
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
@@ -391,30 +540,94 @@ def main() -> int:
         print("translation/ not found; nothing to check.", file=sys.stderr)
         return 0
 
-    findings: list[Finding] = []
+    def _git_changed_translation_files() -> set[Path]:
+        """
+        Return repo-relative Paths under translation/ that appear in `git status --porcelain`.
+
+        If git isn't available, return an empty set.
+        """
+        import subprocess
+
+        try:
+            proc = subprocess.run(
+                ["git", "status", "--porcelain"],
+                cwd=root,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+        except OSError:
+            return set()
+
+        if proc.returncode != 0:
+            return set()
+
+        changed: set[Path] = set()
+        for line in proc.stdout.splitlines():
+            if not line:
+                continue
+
+            # Format: XY <path> or "R  old -> new"
+            path_part = line[3:]
+            if " -> " in path_part:
+                path_part = path_part.split(" -> ", 1)[1]
+            p = Path(path_part.strip())
+            if p.parts and p.parts[0] == "translation" and p.suffix == ".md":
+                changed.add(p)
+
+        return changed
+
+    emphasis_targets: set[Path]
+    if args.emphasis_scope == "off":
+        emphasis_targets = set()
+    elif args.emphasis_scope == "all":
+        emphasis_targets = {
+            p.relative_to(root)
+            for p in sorted(translation_dir.glob("*.md"))
+            if p.is_file()
+        }
+    else:
+        emphasis_targets = _git_changed_translation_files()
+
+    errors: list[Finding] = []
+    warnings: list[Finding] = []
 
     for path in sorted(translation_dir.glob("*.md")):
         raw = path.read_text(encoding="utf-8")
-        findings.extend(check_no_chinese_italics(path, raw))
-        findings.extend(check_bold_spacing(path, raw))
-        findings.extend(check_link_spacing(path, raw))
+        errors.extend(check_no_chinese_italics(path, raw))
+        errors.extend(check_bold_spacing(path, raw))
+        errors.extend(check_link_spacing(path, raw))
 
         done_path = done_dir / path.name
         if done_path.exists():
             done_raw = done_path.read_text(encoding="utf-8")
-            findings.extend(
+            errors.extend(
                 check_first_link_matches_original(path, raw, done_path, done_raw)
             )
-            findings.extend(
+            errors.extend(
                 check_link_urls_match_original(path, raw, done_path, done_raw)
             )
+            rel = path.relative_to(root)
+            if rel in emphasis_targets:
+                em = check_emphasis_preserved(path, raw, done_path, done_raw)
+                if args.strict_emphasis:
+                    errors.extend(em)
+                else:
+                    warnings.extend(em)
 
-    if findings:
-        print("Formatting check failed:\n", file=sys.stderr)
-        for f in findings:
+    if warnings:
+        print("Formatting warnings:\n", file=sys.stderr)
+        for f in warnings:
             rel = f.path.relative_to(root) if f.path.is_absolute() else f.path
             print(f"- {rel}:{f.line} [{f.kind}] {f.message}", file=sys.stderr)
-        print(f"\nTotal: {len(findings)} issue(s).", file=sys.stderr)
+        print(f"\nTotal warnings: {len(warnings)}.\n", file=sys.stderr)
+
+    if errors:
+        print("Formatting check failed:\n", file=sys.stderr)
+        for f in errors:
+            rel = f.path.relative_to(root) if f.path.is_absolute() else f.path
+            print(f"- {rel}:{f.line} [{f.kind}] {f.message}", file=sys.stderr)
+        print(f"\nTotal errors: {len(errors)} issue(s).", file=sys.stderr)
         return 1
 
     print("Formatting check passed.")
