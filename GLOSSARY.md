@@ -18,6 +18,7 @@
 | cope (internet slang) | 自我安慰 | 语境多指自我安慰式的权宜之计（接近 copium 语感）。 |
 | pitch accent | 音高重音 | 日语语音学常用术语。 |
 | shadowing (language learning) | 影子跟读 | 听力输入同时跟读的训练方式。 |
+| Muramasa | 《装甲恶鬼村正》 | 作品名译法；首次出现建议保留英文对照。 |
 | hiragana | 平假名 | 日语假名之一。 |
 | katakana | 片假名 | 日语假名之一。 |
 | kana | 假名 | 平假名与片假名的统称。 |
