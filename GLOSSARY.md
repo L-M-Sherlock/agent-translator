@@ -16,6 +16,8 @@
 | raw (Japanese learning materials context) | 生肉 | 指未翻译的原始材料；可带日语字幕；常与「熟肉」（翻译/字幕版）对照。 |
 | raw listening | 无字幕听力 | 特指无字幕听（无英/中字幕；通常也不带日语字幕）。 |
 | cope (internet slang) | 自我安慰 | 语境多指自我安慰式的权宜之计（接近 copium 语感）。 |
+| pitch accent | 音高重音 | 日语语音学常用术语。 |
+| shadowing (language learning) | 影子跟读 | 听力输入同时跟读的训练方式。 |
 | hiragana | 平假名 | 日语假名之一。 |
 | katakana | 片假名 | 日语假名之一。 |
 | kana | 假名 | 平假名与片假名的统称。 |
