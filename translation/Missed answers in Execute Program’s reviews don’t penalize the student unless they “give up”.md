@@ -13,4 +13,4 @@
 ## References
 
 - Conversation with Gary Bernhardt, 2020-03-24
-- Email with Gary Bernhardt, 2020-04-07. [Re: Progress mechanics for spaced memory systems](javascript:void(0))
+- Email with Gary Bernhardt, 2020-04-07. Re: Progress mechanics for spaced memory systems
