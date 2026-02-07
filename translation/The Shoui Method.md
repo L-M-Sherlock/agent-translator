@@ -1011,8 +1011,8 @@ Width=800, Height=500.
 
 我认为，用于 Anki 卡片释义的最佳词典组合是：
 
--   copy and paste the most simple definition from either 広辞苑 第七版 or 三省堂国語辞典 第八版 in the SelectionText field.
--   under it, copy and paste the definition line(s) in 研究社　新和英大辞典　第５版 (or JMdict) in the SelectionText field.
+-   在 `SelectionText` 字段中，从「広辞苑 第七版」或「三省堂国語辞典 第八版」复制粘贴最简洁的释义。
+-   在其下方，在 `SelectionText` 字段中再复制粘贴「研究社　新和英大辞典　第５版」（或 JMdict）里的释义行。
 
 除非你非常认真想走全单语（我曾经很长一段时间就是这样），否则我认为上面的组合最好。你可以考虑把这两个词典放进 MainDefinition，这样默认就会显示出来。
 
