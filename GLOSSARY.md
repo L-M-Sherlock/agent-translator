@@ -15,6 +15,7 @@
 | prompt (Spaced repetition context) | 卡片 | 指间隔重复系统中的「卡片」（题卡/复习卡），不是「提示」。 |
 | raw (Japanese learning materials context) | 生肉 | 指未翻译的原始材料；可带日语字幕；常与「熟肉」（翻译/字幕版）对照。 |
 | raw listening | 无字幕听力 | 特指无字幕听（无英/中字幕；通常也不带日语字幕）。 |
+| tacit knowledge | 隐性知识 | 认知/习得语境下指难以言传、难以完全显性化表述的知识；统一不用「默会知识」。 |
 | cope (internet slang) | 自我安慰 | 语境多指自我安慰式的权宜之计（接近 copium 语感）。 |
 | pitch accent | 音高重音 | 日语语音学常用术语。 |
 | shadowing (language learning) | 影子跟读 | 听力输入同时跟读的训练方式。 |
