@@ -229,6 +229,35 @@ def _clean_readthesequences_markdown(md_body: str, title: str) -> str:
             continue
         out.append(line)
 
+    # Trim trailing prev/next navigation links that the export sometimes appends.
+    # These typically use non-hyphenated slugs like /TheParableOfTheDagger.
+    def is_trailing_nav_link(line: str) -> bool:
+        s2 = line.strip()
+        m = re.fullmatch(
+            r"\[[^\]]+\]\((https?://www\.readthesequences\.com/[^)#?]+)\)\s*", s2
+        )
+        if not m:
+            return False
+        path = urllib.parse.urlparse(m.group(1)).path.strip("/")
+        if not path:
+            return False
+        if "-" in path:
+            return False
+        if path.endswith("Sequence"):
+            return False
+        if path in {"HomePage", "About", "Search", "Contents"}:
+            return False
+        return True
+
+    # Remove blank lines at EOF.
+    while out and not out[-1].strip():
+        out.pop()
+    # Remove one or more trailing nav links.
+    while out and is_trailing_nav_link(out[-1]):
+        out.pop()
+        while out and not out[-1].strip():
+            out.pop()
+
     # Trim leading/trailing blank lines.
     cleaned = "\n".join(out).strip("\n")
     return cleaned
