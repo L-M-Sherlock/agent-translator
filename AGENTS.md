@@ -51,6 +51,24 @@
 6. 导出对齐 CSV（不提交）：`uv run python scripts/export_csv.py --src "done/Your Book Review How Children Fail.md" --trans "translation/Your Book Review How Children Fail.md"`（输出到 `csv/`）。
 7. 清空 `tmp/` 中间稿（保留空文件夹即可），然后 `git add` 并提交（通常只提交 `translation/` 下的新译文文件）。
 
+## Subagent 协作流程（Multi-agents）
+
+当启用 Multi-agents 时，用「一篇文章 = 一个 subagent」并行推进，但必须避免多人同时改动同一文件。
+
+1. **任务拆分**：按 `source/` 的文件顺序分配；每个 subagent 只负责一个明确的输入文件（例如 `source/08 Disguised Queries.md`）。
+2. **下发指令**（必须包含的硬约束）：
+   - 不在对话中输出译文；只把 Round 4 终稿写入目标文件；
+   - 非空行逐行对齐（`export_csv.py` 以去空行后的逐行对应为准）；
+   - H1 下第一个链接保留英文不译；
+   - 中文不使用 `*斜体*`；强调语义用 `**...**` 且不拆词；
+   - 按文件流程写入 `translation/`、移动到 `done/`，并运行 `uv run scripts/check_format.py --emphasis-scope all` + `uv run python scripts/export_csv.py ...`。
+3. **冲突规避**：
+   - subagent 禁止执行 `git commit`（避免锁/冲突）；由负责人统一提交；
+   - 同时运行的 subagent 数量以不影响本机资源为准（建议每次 2–4 个）。
+4. **收尾验收（负责人执行）**：
+   - 等待 subagent 完成并检查其报告的文件路径、行对齐、`check_format` 结果与 CSV 行数；
+   - 仅 `git add "translation/<file>.md"` 并按篇提交（例如 `git commit -m "Translate <Title>"`），避免夹带无关改动。
+
 ## Tooling (uv + ruff)
 
 - 使用 uv 管理脚本运行环境：首次运行前执行 `uv sync --dev`。
