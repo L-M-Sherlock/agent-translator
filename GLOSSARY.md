@@ -29,6 +29,18 @@
 | review | 复习 | 指 SRS 的复习环节/复习行为。 |
 | application (as in application prompt) | 应用 | 在「应用卡片」等组合中使用。 |
 | target language | 目标语言 | 固定译法；避免简称为「目标语」。 |
+| Thingspace | 事物空间 | ReadTheseSequences 语境术语；首次出现建议写「事物空间（Thingspace）」，后续统一用「事物空间」。 |
+| Conceptspace | 概念空间 | ReadTheseSequences 语境术语；首次出现建议写「概念空间（Conceptspace）」，后续统一用「概念空间」。 |
+| extension (semantics) | 外延 | 与 intension 对应；首次出现建议写「外延（extension）」。 |
+| intension (semantics) | 内涵 | 与 extension 对应；首次出现建议写「内涵（intension）」。 |
+| attractor (dynamical systems / NN) | 吸引子 | 神经网络/动力系统语境；首次出现建议写「吸引子（attractor）」。 |
+| Hebb’s Rule | 赫布定则 | 神经科学/学习规则；首次出现建议写「赫布定则（Hebb’s Rule）」。 |
+| clamped / unclamped (NN) | （未）钳制 | 指将变量固定为观测值/未固定；首次出现建议写「（未）钳制（clamped/unclamped）」。 |
+| recurrent network | 循环网络 | 神经网络术语；首次出现建议写「循环（recurrent）网络」。 |
+| fitness landscape | 适应度景观 | 进化/优化语境术语；首次出现建议写「适应度景观（fitness landscape）」。 |
+| Naive Bayes | 朴素贝叶斯 | 机器学习/统计术语；首次出现建议写「朴素贝叶斯（Naive Bayes）」。 |
+| entropy | 熵 | 信息论/统计物理术语。 |
+| mutual information | 互信息 | 信息论术语；必要时首次可写「互信息（mutual information）」。 |
 | VN (Japanese learning context) | 视觉小说 | Visual Novel 的缩写；在日语学习语境下按「视觉小说」处理。 |
 | LN (Japanese learning context) | 轻小说 | Light Novel 的缩写；在日语学习语境下按「轻小说」处理。 |
 | lesson | 课程 / 课节 | 视语境选择：偏课程结构用「课节」。 |
