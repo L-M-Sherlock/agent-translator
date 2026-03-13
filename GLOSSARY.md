@@ -13,6 +13,13 @@
 | Science of sleep | 《睡眠的科学》 | 书名译法；使用书名号《》包裹链接文本。 |
 | Piotr Wozniak | 彼得·沃兹尼亚克 | 人名译法（按项目约定）。 |
 | prompt (Spaced repetition context) | 卡片 | 指间隔重复系统中的「卡片」（题卡/复习卡），不是「提示」。 |
+| compulsory schooling | 强制学校教育 | 固定译法；避免译为「义务教育」。 |
+| learn drive | 学习内驱力 | 固定译法；指驱动自主学习的内在驱力。 |
+| unschooling | 非学校教育 | 固定译法；指脱离学校体制的自我导向教育。 |
+| Phonics | 自然拼读法 | 阅读教学术语固定译法。 |
+| whole language | 整体语言法 | 阅读教学术语固定译法。 |
+| toxic memory | 毒性记忆 | 固定译法；避免译为「有毒记忆」。 |
+| free learning | 自由学习 | 固定译法。 |
 | raw (Japanese learning materials context) | 生肉 | 指未翻译的原始材料；可带日语字幕；常与「熟肉」（翻译/字幕版）对照。 |
 | raw listening | 无字幕听力 | 特指无字幕听（无英/中字幕；通常也不带日语字幕）。 |
 | tacit knowledge | 隐性知识 | 认知/习得语境下指难以言传、难以完全显性化表述的知识；统一不用「默会知识」。 |

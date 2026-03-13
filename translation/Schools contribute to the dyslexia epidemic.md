@@ -61,7 +61,7 @@
 许多天才坦承自己有阅读障碍，这一事实有两个原因：
 
 - 更长的发育轨迹是高智力的标志，但也会导致阅读延迟，从而促成阅读障碍的发生（见：[早熟悖论（precocity paradox）](https://supermemo.guru/wiki/Precocity_paradox)）
-- [语义脑（semantic brain）](https://supermemo.guru/wiki/Semantic_brain)是通往天才心智的极佳跳板。然而，语义脑也具有较高的[反抗性（reactance）](https://supermemo.guru/wiki/Reactance)和自身的教育偏好（例如：整体词法（whole word）优先于自然拼读（phonics）、猜词等）
+- [语义脑（semantic brain）](https://supermemo.guru/wiki/Semantic_brain)是通往天才心智的极佳跳板。然而，语义脑也具有较高的[反抗性（reactance）](https://supermemo.guru/wiki/Reactance)和自身的教育偏好（例如：整体词法（whole word）优先于自然拼读法（phonics）、猜词等）
 
 学校对[智力](https://supermemo.guru/wiki/Intelligence)有不良影响（见：[在学校学到的 100 个坏习惯](https://supermemo.guru/wiki/100_bad_habits_learned_at_school)），然而它们往往最伤害聪明人。阅读障碍是一种智力常被惩罚的现象。拒绝服从学校体制的大脑被贴上迟缓或弱智的标签。它本该被赞许。
 
@@ -89,12 +89,12 @@
 
 [![img](https://supermemo.guru/images/thumb/2/29/Mechanism_of_educational_dyslexia.png/500px-Mechanism_of_educational_dyslexia.png)](https://supermemo.guru/wiki/File:Mechanism_of_educational_dyslexia.png)
 
-> **图：**[学习中的强制](https://supermemo.guru/wiki/Coercion_in_learning)、[解码失败惩罚](https://supermemo.guru/wiki/Decoding_failure_penalty)、[不连贯的记忆](https://supermemo.guru/wiki/Coherence)、[有毒记忆](https://supermemo.guru/wiki/Toxic_memory)以及成功压力提供了一组复杂的正反馈回路，导致[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)。阅读中愉悦的主要来源是意义的发现。[学习的愉悦](https://supermemo.guru/wiki/Pleasure_of_learning)促成高[连贯性](https://supermemo.guru/wiki/Coherence)的稳固[记忆巩固](https://supermemo.guru/wiki/Consolidation_of_memory)。相反，阅读中不快的主要来源是学校教育的压力、挫败与自我强制。学习阅读的基础是**理解书面文本的动机**。更多参见：[学习的愉悦](https://supermemo.guru/wiki/Pleasure_of_learning)
+> **图：**[学习中的强制](https://supermemo.guru/wiki/Coercion_in_learning)、[解码失败惩罚](https://supermemo.guru/wiki/Decoding_failure_penalty)、[不连贯的记忆](https://supermemo.guru/wiki/Coherence)、[毒性记忆](https://supermemo.guru/wiki/Toxic_memory)以及成功压力提供了一组复杂的正反馈回路，导致[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)。阅读中愉悦的主要来源是意义的发现。[学习的愉悦](https://supermemo.guru/wiki/Pleasure_of_learning)促成高[连贯性](https://supermemo.guru/wiki/Coherence)的稳固[记忆巩固](https://supermemo.guru/wiki/Consolidation_of_memory)。相反，阅读中不快的主要来源是学校教育的压力、挫败与自我强制。学习阅读的基础是**理解书面文本的动机**。更多参见：[学习的愉悦](https://supermemo.guru/wiki/Pleasure_of_learning)
 
 ## 延伸阅读
 
 - [教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)
-- [有毒记忆](https://supermemo.guru/wiki/Toxic_memory)
+- [毒性记忆](https://supermemo.guru/wiki/Toxic_memory)
 - [强制会导致阅读障碍吗？](https://supermemo.guru/wiki/Can_coercion_cause_dyslexia%3F)
 - [不要教你的孩子阅读](https://supermemo.guru/wiki/Do_not_teach_your_child_to_read)
 - [阅读战争已结束：整体语言法（whole language）对自然拼读法（phonics）](https://supermemo.guru/wiki/Reading_wars_are_over:_Whole_language_vs._Phonics)
