@@ -20,21 +20,21 @@
 
 ## 阅读教学会抑制阅读
 
-我写的「[我绝不会把孩子送去上学](https://supermemo.guru/wiki/I_would_never_send_my_kids_to_school)」一文，灵感来自 2016 年暑假末、开学前就郁闷的孩子们。过去几年里，我注意到孩子越来越早开始讨厌学校。如今，一个孩子在上第一节课前就说**「我讨厌上学」**并不罕见。尽管近几年在波兰我们把入学年龄从 6 岁提高到 7 岁。这个阶段学校之所以让人厌恶，我找到了主要元凶：**阅读教学**。由于 YouTube 和电脑游戏的普及，孩子学习阅读的动机更弱了。他们可以很早就开始探索世界，远在读出第一句之前。当孩子找到新的学习方式，成年人却仍沉浸在「阅读是通向全部知识之门」的旧神话中。这形成了恶性反馈：孩子越喜欢电子媒体，就越不喜欢印刷品，成人世界越恐慌，就越给孩子施加早期阅读的压力。
+我写「[我绝不会把孩子送去上学](https://supermemo.guru/wiki/I_would_never_send_my_kids_to_school)」一文的灵感，来自 2016 年暑假结束、开学前就已陷入沮丧的孩子们。过去几年里，我注意到孩子越来越早开始讨厌学校。如今，一个孩子在上第一堂课之前就说出**「我讨厌上学」**，已经不算罕见。尽管近几年波兰把入学年龄从 6 岁提高到了 7 岁。对于这一阶段的学校厌恶，我找到了主要元凶：**阅读教学**。由于 YouTube 和电脑游戏的普及，孩子学习阅读的动机变弱了。他们在读出人生第一句完整文字之前，就已经可以很早开始探索世界。当孩子找到新的学习方式时，成年人却仍活在「阅读是通向一切知识的大门」这一旧神话里。这形成了恶性反馈：孩子越喜欢电子媒体，就越不喜欢印刷品；成人世界越恐慌，就越会给孩子施加提早阅读的压力。
 
-阅读也许是最能痛苦地看到学校教育与[自由学习](https://supermemo.guru/wiki/Free_learning)差异的领域。它是学校之痛最强烈的领域，却又是几乎不可能把心智从学校灌输的教条中解放出来的领域。
+阅读也许是最能让人痛切看出学校教育与[自由学习](https://supermemo.guru/wiki/Free_learning)差异的领域。它既是学校之痛最集中的地带，也是人们最难把心智从学校灌输的教条里解放出来的领域。
 
 接着第二个神话登场。如果阅读很难，据说是因为早年被忽视。孩子们越来越早学习字母，却在远远未能有效利用最简单的文本之前就被迫阅读。开始得越早，问题越多，越讨厌学习，于是成年人不断拧紧早期阅读的螺丝。这种疯狂为学校厌恶奠基，这种厌恶很可能更早出现、造成更大伤害。于是代际冲突产生：孩子不想学阅读，父母却越来越痴迷阅读。
 
 越是加大早期阅读的压力，孩子就越讨厌学校
 
-然而，讨厌学校并不是早教竞赛的唯一副作用。与学习障碍相关的各种[诊断](https://supermemo.guru/wiki/Don't_teach_your_child_to_read#Mental_health_epidemics)正呈流行式增长。这不是我们的孩子变蠢了。增长几乎完全与早期教育压力的增加有关。在阅读方面，我们出现了**[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)**的流行（由学校压力诱发的阅读困难）。在入学最初几年被诊断出的[阅读障碍](https://supermemo.guru/wiki/Dyslexia)中，绝大多数都是阅读压力的结果。[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)可以被纠正，但往往没有。早期学校教育留下的伤痕可能伴随学生终生。
+然而，讨厌学校并不是早教竞赛唯一的副作用。与学习障碍相关的各种[诊断](https://supermemo.guru/wiki/Don't_teach_your_child_to_read#Mental_health_epidemics)正在呈现流行病式增长。这不是因为我们的孩子变笨了。几乎全部增长，都与早期教育压力的增加有关。在阅读方面，我们正经历**[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)**的流行（即由学校压力诱发的阅读困难）。在入学最初几年被诊断出的[阅读障碍](https://supermemo.guru/wiki/Dyslexia)中，绝大多数都是阅读压力造成的。[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)可以被修复，但往往并未得到修复。早期学校教育留下的伤痕，可能伴随学生一生。
 
 阅读障碍的流行与早期阅读压力的增加相关
 
 当我说**「不要教你的孩子阅读」**时，我并不是要父母放弃阅读。我只是希望他们通过让孩子自行学习，节省大量时间与压力。如今学习阅读比以往任何时候都更容易，它不该成为担忧或催促的来源。
 
-最优策略是等待。我们应当等到孩子主动请求帮助，或更可能的是，等到他们自己学会阅读。[民主学校](https://supermemo.guru/wiki/Democratic_school)或[非学校化](https://supermemo.guru/wiki/Unschooling)的经验表明，阅读可能来得很晚。[Peter Gray](https://supermemo.guru/wiki/Peter_Gray) 等人估计平均起始年龄为 9 岁。例如，在[这份估计](https://unboundedocean.wordpress.com/2018/08/31/reading-age-in-unschooled-kids-2018-update/)中，13 岁或更晚才学会阅读的概率为 7%（针对非学校化者）。不过，新的交互式技术的出现也许会缩短这看似悲观的延迟。我会解释阅读如何自然涌现，以及为什么这种涌现会带来更好的阅读能力。
+最优策略是等待。我们应当等到孩子主动请求帮助，或者更可能的是，等到他们自己学会阅读。[民主学校](https://supermemo.guru/wiki/Democratic_school)和[非学校化](https://supermemo.guru/wiki/Unschooling)的经验表明，阅读可能来得很晚。[Peter Gray](https://supermemo.guru/wiki/Peter_Gray) 等人估计，孩子开始学会阅读的平均年龄大约是 9 岁。例如，在[这份估计](https://unboundedocean.wordpress.com/2018/08/31/reading-age-in-unschooled-kids-2018-update/)中，13 岁或更晚才学会阅读的概率为 7%（针对非学校化儿童）。不过，新型交互技术的出现也许会缩短这种看似悲观的延迟。我会解释阅读如何自然涌现，以及为什么这种涌现会带来更好的阅读能力。
 
 如果本文太长，而你想要一个 4 分钟的视频摘要，请看 [Peter Gray 博士的观点](https://www.youtube.com/watch?v=FPcT4LP0SOs)。你也可以查看更易读的[无学校化学习阅读的七条原则](https://www.psychologytoday.com/intl/blog/freedom-learn/201002/children-teach-themselves-read)。
 
@@ -46,19 +46,19 @@
 
 所有读者往往在相对无痛的学习过程中，最终收敛到预期的阅读流利度。我们于是希望学习阅读的所有错误都可通过后续训练补救（即主要靠大量阅读）。然而，任何偏离最优的做法都是浪费。一方面，它们占用学习过程更多时间，并在恢复期需要额外学习。最终，我们无法确定所有变化都可逆，也无法确定次优布线不会留下永久印记。当自我编排的学习过程发生时，没有疑问。游泳风格有很多，但我们都倾向于最终到达自由泳的某个变体。路径越短，越可能得到最优布线。
 
-从大脑的[概念网络](https://supermemo.guru/wiki/Concept_network)来看，阅读的艺术主要旨在把视觉模式识别图与语义图连接起来。这意味着我们想要解码印刷文字背后的意义。
+从大脑的[概念网络](https://supermemo.guru/wiki/Concept_network)来看，阅读这门技艺的核心，主要是把视觉模式识别图谱与语义图谱连接起来。这意味着，我们真正想解码的是印刷文字背后的意义。
 
-然而，这一过程不可避免地涉及用于生成言语的[概念图](https://supermemo.guru/wiki/Concept_map)（包括布罗卡区）。这意味着在学习阅读时，我们通常也会学习如何把文本转换成声音。同样，速度识别有助于处理帮助解码和理解复杂信息的语法信息。这涉及韦尼克区的言语区域。
+然而，这一过程不可避免地也会涉及用于生成言语的[概念图](https://supermemo.guru/wiki/Concept_map)（包括布罗卡区）。这意味着，在学习阅读时，我们通常也会顺带学会如何把文本转换成声音。同样，语音识别也有助于处理那些帮助解码和理解复杂信息的语法信息。这涉及韦尼克区的言语区域。
 
 以下是阅读中涉及的一些主要方向性联结：
 
 - 视觉→语义：视觉模式（例如 DOG）与语义（在[概念网络](https://supermemo.guru/wiki/Concept_network)中被点亮的狗的[概念](https://supermemo.guru/wiki/Concept)）；这是阅读唯一必需的联结
-- visual→audio：视觉模式（如 DOG）与单词 DOG 的发音，进而可与语义相连；字母解码把字母与对应的声音（音素）相连，而**音系解码**把印刷的视觉符号转成言语声音
-- visual→motor：通常以语义为中介；涉及**运动编码**（见下文 semantic→motor）
-- semantic→audio：用于言语生成，对阅读非必需，作为过程副产物发展
-- semantic→visual：文字的视觉化；阅读的副产物
-- semantic→motor：写作技能、打字技能、言语产出；阅读的副产物
-- language center connections：在复杂信息中协助解码与编码语法信息
+- 视觉→听觉：视觉模式（如 DOG）与单词 DOG 的发音，进而可与语义相连；字母解码把字母与对应的声音（音素）相连，而**音系解码**则把印刷的视觉符号转成言语声音
+- 视觉→运动：通常以语义为中介；涉及**运动编码**（见下文「语义→运动」）
+- 语义→听觉：用于言语生成，对阅读并非必需，作为这一过程的副产物发展出来
+- 语义→视觉：文字的视觉化；阅读的副产物
+- 语义→运动：写作技能、打字技能、言语产出；阅读的副产物
+- 语言中枢的连接：在复杂信息中协助解码与编码语法信息
 
 第二种联结（视觉→听觉）重要性较低，可能在阅读障碍者身上被**跳过，或在流畅读者身上被自动化**。尤其是，字母编码是学校要求的一个步骤，并被视为阅读的基础。教师与学生的价值评估差异导致强制压力，要求掌握这项大脑理应视为次要的技能。在以理解为目标的阅读中，我们关心的只有视觉模式与语义之间的联结（所谓的**语义映射**）。如果孩子不能朗读，他可能会被贴上阅读障碍的标签。然而，只要孩子知道自己读的内容是什么，他就掌握了阅读的核心技艺。由于模式、声音和语义紧密相连，**「不阅读也能理解」**很少见，并会随着时间消失（在健康的学习过程中）。在早期阶段，解码过程会得到语法知识的弱辅助，这让人想起[猿类的语言理解](https://supermemo.guru/wiki/Chimps_hate_school_too)。在阅读障碍者身上，**「不阅读也能理解」**可能终生存在。
 
@@ -86,7 +86,7 @@
 
 婴儿、幼儿以及不会读书的孩子，都会吸收知识并为流利阅读做准备。当孩子阅读技能很差时，还让他们慢慢啃长书是浪费。与此同时，他们可以通过其他渠道以更高速度、更大体量获取知识：与父母和同伴交流、视频、电脑游戏等等。书面语言的通道会随发展而打开。它高度个体化，取决于智力、气质、兴趣等诸多因素。它常常悄然发生。小事件可能带来大热情，阅读技能似乎一夜之间就会出现。
 
-SuperMemo 插入。[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
+SuperMemo 补充：[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
 
 当阅读已经流畅时，[渐进阅读](https://supermemo.guru/wiki/Incremental_reading)可能是高效、非线性、语义化阅读的最佳训练工具。详情见：[渐进阅读是加了猛料的速读](https://supermemo.guru/wiki/Incremental_reading_is_speed-reading_on_steroids)
 
@@ -120,7 +120,7 @@ SuperMemo 插入。[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_
 
 学校很少理解或考虑[涌现现象](https://supermemo.guru/wiki/Emergence)。相反，孩子会因错误而被训斥，并被迅速推向[教育性阅读障碍](https://supermemo.guru/wiki/Educational_dyslexia)。关于学校对启发式方法的战争，详见：[在学校学到的 100 个坏习惯](https://supermemo.guru/wiki/100_bad_habits_learned_at_school)。
 
-SuperMemo 插入。[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
+SuperMemo 补充：[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
 
 在[渐进阅读](https://supermemo.guru/wiki/Incremental_reading)中，大脑可以自由即兴并承担更大的解码风险。毕竟，与普通阅读相比，错误的代价要小得多。结果，大脑可以采用更广泛的模式识别策略。这提升了处理速度，提高了理解，并更强调语义，从而提高阅读的[智力](https://supermemo.guru/wiki/Intelligence)（即大脑解开文本中谜题的能力）。在流畅读者身上，这一过程很难分析，但所有必要线索都来自理论，并构成了上述观察。在[渐进阅读](https://supermemo.guru/wiki/Incremental_reading)中，[条目](https://supermemo.guru/wiki/Item)的停止准则可以进一步降低到「我们知道所提问题的答案」这一认识。这可以提高阅读速度。
 
@@ -735,7 +735,7 @@ Larry 在古典知识、文学、历史和哲学上有扎实背景。在他看�
 
 另见：[Peter Gray 遭 Larry Sanger 攻击](https://supermemo.guru/wiki/Peter_Gray_under_attack_from_Larry_Sanger)
 
-SuperMemo 插入。[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
+SuperMemo 补充：[什么是 SuperMemo？](https://supermemo.guru/wiki/What_is_SuperMemo%3F)
 
 顺便说一句，我并不太支持孩子使用 [SuperMemo](https://supermemo.guru/wiki/SuperMemo)（见：[SuperMemo 不适用于儿童](https://supermemo.guru/wiki/SuperMemo_does_not_work_for_kids)）。不过，我很高兴看到 Larry 和他 6 岁的孩子一起[用 SuperMemo 高飞](https://www.youtube.com/watch?v=rDc8govFFEo)。如果你能像视频中那样有魅力地做到，而且孩子真的能开心到跳起来，我也会为你高兴。
 
