@@ -24,6 +24,8 @@ from typing import Iterable
 
 
 READTHESEQUENCES_HOST = "www.readthesequences.com"
+_SITE_NAV_PATHS = {"", "index", "rss", "HomePage", "About", "Search", "Contents"}
+_INLINE_LINK_RE = re.compile(r"\[[^\]]+\]\((https?://[^)\s]+)\)")
 
 
 def _http_get(url: str, timeout_s: float = 30.0) -> str:
@@ -102,10 +104,30 @@ def _is_post_url(url: str) -> bool:
     if path.endswith("-Sequence"):
         return False
     # Exclude obvious site pages.
-    if path in {"", "index", "rss"}:
+    if path in _SITE_NAV_PATHS:
         return False
     # Exclude query-only variants.
     if parsed.query:
+        return False
+    return True
+
+
+def _is_bookish_url(url: str) -> bool:
+    """
+    ReadTheseSequences book pages list both sequence landing pages and essays.
+    Accept both, but still exclude site navigation pages.
+    """
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in {"http", "https"}:
+        return False
+    if parsed.netloc != READTHESEQUENCES_HOST:
+        return False
+    if parsed.query:
+        return False
+    path = parsed.path.strip("/")
+    if not path:
+        return False
+    if path in _SITE_NAV_PATHS:
         return False
     return True
 
@@ -375,6 +397,45 @@ def scrape_sequence(sequence_url: str) -> list[str]:
     return posts
 
 
+def scrape_book(book_url: str) -> list[str]:
+    """
+    Return ordered list of content page URLs from a ReadTheseSequences book page.
+
+    Book pages list:
+    - a book introduction page
+    - sequence landing pages
+    - all essays within those sequences
+    - occasional interludes / appendices
+
+    We parse the site's markdown export to stay aligned with the existing scraper
+    method and start collecting links after the first ornamental divider, which
+    skips the introductory quote and its unrelated citation link.
+    """
+    md_text = _http_get(book_url + "?action=markdown")
+    md_text = _convert_reference_links(md_text)
+
+    seen: set[str] = set()
+    pages: list[str] = []
+    started = False
+    for line in md_text.splitlines():
+        s = line.strip()
+        if not started:
+            if s == "☙":
+                started = True
+            continue
+        if s.startswith("[Top]("):
+            break
+        for match in _INLINE_LINK_RE.finditer(line):
+            url = match.group(1)
+            if not _is_bookish_url(url):
+                continue
+            if url in seen:
+                continue
+            seen.add(url)
+            pages.append(url)
+    return pages
+
+
 def build_posts(
     post_urls: Iterable[str], sleep_s: float = 0.0, start_idx: int = 1
 ) -> list[Post]:
@@ -422,7 +483,9 @@ def write_posts(posts: list[Post], out_dir: Path, prefix_width: int = 2) -> list
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--sequence-url", required=True)
+    src_group = ap.add_mutually_exclusive_group(required=True)
+    src_group.add_argument("--sequence-url")
+    src_group.add_argument("--book-url")
     ap.add_argument("--out-source", default="source")
     ap.add_argument("--sleep", type=float, default=0.0)
     ap.add_argument("--prefix-width", type=int, default=2)
@@ -441,8 +504,12 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    sequence_url = args.sequence_url.strip()
-    post_urls = scrape_sequence(sequence_url)
+    if args.sequence_url:
+        source_url = args.sequence_url.strip()
+        post_urls = scrape_sequence(source_url)
+    else:
+        source_url = args.book_url.strip()
+        post_urls = scrape_book(source_url)
     start_i = max(1, int(args.start_index))
     end_i = int(args.end_index)
     if end_i and end_i < start_i:
