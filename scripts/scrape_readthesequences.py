@@ -153,6 +153,7 @@ _REF_DEF_RE = re.compile(
     r"^\s*\[(?P<id>[^\]]+)\]:\s+(?P<url>\S+)(?:\s+\"[^\"]*\")?\s*$"
 )
 _REF_USE_RE = re.compile(r"\[(?P<text>[^\]]+)\]\[(?P<id>[^\]]+)\]")
+_REDIRECT_RE = re.compile(r"\(:redirect\s+Main\.(?P<slug>[^ )]+)")
 
 _WEIRD_IMAGE_URL_RE = re.compile(
     r"!\[(?P<alt>[^\]]*)\]\[(?P<url>https?://[^\s\]]+)(?:\s+[^\]]+)?\]"
@@ -237,6 +238,16 @@ def _sanitize_filename(name: str) -> str:
     return name
 
 
+def _redirect_target_url(md: str, current_url: str) -> str | None:
+    match = _REDIRECT_RE.search(md)
+    if not match:
+        return None
+    slug = match.group("slug").strip()
+    if not slug:
+        return None
+    return urllib.parse.urljoin(current_url, f"/{slug}")
+
+
 @dataclass(frozen=True)
 class Post:
     idx: int
@@ -246,10 +257,16 @@ class Post:
     markdown: str
 
 
-def _fetch_post_markdown(post_url: str) -> str:
-    # Fetch built-in Markdown view.
-    md_url = post_url + "?action=markdown"
-    return _http_get(md_url)
+def _fetch_post_markdown(post_url: str, max_redirects: int = 5) -> tuple[str, str]:
+    current_url = post_url
+    for _ in range(max_redirects + 1):
+        md_url = current_url + "?action=markdown"
+        md = _http_get(md_url)
+        redirect_url = _redirect_target_url(md, current_url)
+        if not redirect_url or redirect_url == current_url:
+            return current_url, md
+        current_url = redirect_url
+    raise RuntimeError(f"Too many markdown redirects while fetching {post_url}")
 
 
 def _extract_title_from_markdown(md: str, fallback: str) -> tuple[str, str]:
@@ -454,8 +471,8 @@ def build_posts(
 ) -> list[Post]:
     posts: list[Post] = []
     for i, url in enumerate(post_urls, start=start_idx):
-        slug = _slug_from_post_url(url)
-        md_raw = _fetch_post_markdown(url)
+        resolved_url, md_raw = _fetch_post_markdown(url)
+        slug = _slug_from_post_url(resolved_url)
         title, md_body = _extract_title_from_markdown(
             md_raw, fallback=slug.replace("-", " ")
         )
@@ -469,13 +486,15 @@ def build_posts(
             [
                 f"# {title}",
                 "",
-                f"[{title}]({url})",
+                f"[{title}]({resolved_url})",
                 "",
                 md_body.strip("\n"),
                 "",
             ]
         )
-        posts.append(Post(idx=i, url=url, slug=slug, title=title, markdown=md_final))
+        posts.append(
+            Post(idx=i, url=resolved_url, slug=slug, title=title, markdown=md_final)
+        )
         if sleep_s:
             time.sleep(sleep_s)
     return posts
