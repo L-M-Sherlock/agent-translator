@@ -15,7 +15,9 @@ from __future__ import annotations
 import argparse
 from html.parser import HTMLParser
 import re
+import ssl
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
@@ -28,7 +30,7 @@ _SITE_NAV_PATHS = {"", "index", "rss", "HomePage", "About", "Search", "Contents"
 _INLINE_LINK_RE = re.compile(r"\[[^\]]+\]\((https?://[^)\s]+)\)")
 
 
-def _http_get(url: str, timeout_s: float = 30.0) -> str:
+def _http_get(url: str, timeout_s: float = 30.0, retries: int = 5) -> str:
     req = urllib.request.Request(
         url,
         headers={
@@ -38,10 +40,21 @@ def _http_get(url: str, timeout_s: float = 30.0) -> str:
         },
         method="GET",
     )
-    with urllib.request.urlopen(req, timeout=timeout_s) as resp:
-        data = resp.read()
-    # ReadTheseSequences pages are UTF-8.
-    return data.decode("utf-8", errors="replace")
+    last_exc: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout_s) as resp:
+                data = resp.read()
+            # ReadTheseSequences pages are UTF-8.
+            return data.decode("utf-8", errors="replace")
+        except (urllib.error.URLError, TimeoutError, ssl.SSLError) as exc:
+            last_exc = exc
+            if attempt == retries:
+                break
+            # Back off briefly; the site intermittently EOFs on TLS reads.
+            time.sleep(min(2.0 * attempt, 8.0))
+    assert last_exc is not None
+    raise last_exc
 
 
 class _AnchorExtractor(HTMLParser):
