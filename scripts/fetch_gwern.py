@@ -41,10 +41,15 @@ def _discover_markdown_url(url: str, raw_html: str) -> str:
 
 
 def _discover_title(raw_markdown: str) -> str:
-    match = re.search(r'^title:\s*"(.+?)"\s*$', raw_markdown, flags=re.M)
-    if not match:
-        raise RuntimeError("Could not find Gwern page title in front matter")
-    return match.group(1)
+    for pattern in (
+        r"^title:\s*\"(.+?)\"\s*$",
+        r"^title:\s*'(.+?)'\s*$",
+        r"^title:\s*([^\"'\n][^\n]*?)\s*$",
+    ):
+        match = re.search(pattern, raw_markdown, flags=re.M)
+        if match:
+            return match.group(1).strip()
+    raise RuntimeError("Could not find Gwern page title in front matter")
 
 
 def _load_page(url: str) -> Page:
@@ -63,7 +68,7 @@ def _load_page(url: str) -> Page:
 
 _FRONT_MATTER_RE = re.compile(r"^---\n.*?\n\.\.\.\n", flags=re.S)
 _HTML_COMMENT_RE = re.compile(r"<!--.*?-->")
-_HTML_LINK_RE = re.compile(r'<a href="([^"]+)"(?: [^>]*)?>(.*?)</a>')
+_HTML_LINK_RE = re.compile(r"<a href=(['\"])(.*?)\\1(?: [^>]*)?>(.*?)</a>")
 _SPAN_ID_RE = re.compile(r'<span id="[^"]*"></span>')
 _MARGINNOTE_RE = re.compile(r"\[([^\]]+)\]\{\.marginnote(?: [^}]*)?\}")
 _WIKI_LINK_RE = re.compile(r"(?<![\\^])\[([^\]]+)\]\(!W(?: \"([^\"]+)\")?\)")
@@ -77,8 +82,8 @@ _RAW_DIV_RE = re.compile(r"</?div(?: [^>]*)?>")
 
 def _html_link_to_markdown(base_url: str, text: str) -> str:
     def repl(match: re.Match[str]) -> str:
-        href = urljoin(base_url, match.group(1))
-        label = BeautifulSoup(match.group(2), "html.parser").get_text(" ", strip=True)
+        href = urljoin(base_url, match.group(2))
+        label = BeautifulSoup(match.group(3), "html.parser").get_text(" ", strip=True)
         return f"[{label}]({href})"
 
     return _HTML_LINK_RE.sub(repl, text)
@@ -174,6 +179,8 @@ def _clean_markdown(page: Page) -> str:
             continue
         if line == "</div>":
             continue
+        if "return-to-blog-index-link" in line:
+            continue
 
         title_match = re.fullmatch(r'<div class="admonition-title">(.+)</div>', line)
         if title_match:
@@ -181,6 +188,8 @@ def _clean_markdown(page: Page) -> str:
             continue
 
         cleaned = _clean_line(page.url, line)
+        if cleaned.strip() == "[[Return to blog index](https://gwern.net/blog/index)]":
+            continue
         out.append(cleaned)
 
     # Trim surrounding blank lines and squeeze repeated empties.
