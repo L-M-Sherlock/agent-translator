@@ -148,6 +148,12 @@ def _clean_line(base_url: str, line: str) -> str:
     line = _IMAGE_ATTR_RE.sub(r"\1", line)
     line = _rewrite_relative_markdown_urls(base_url, line)
     line = _rewrite_trailing_image_url(base_url, line)
+    # Normalize some Pandoc/Gwern editorial annotations into plain Markdown text.
+    line = line.replace(r"[\[", "(")
+    line = line.replace(r"\]]{.editorial}", ")")
+    line = re.sub(r"\[(.*)\]\{#[^}]+\}", r"\1", line)
+    line = re.sub(r"^#\.\s+", "1. ", line)
+    line = re.sub(r"\s+\{#[^}]+\}$", "", line)
     return line.rstrip()
 
 
